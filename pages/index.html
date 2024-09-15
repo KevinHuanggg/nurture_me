@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container">
+      <h1 class="text-indigo-500 text-[120px]">我是首頁</h1>
+      <input id="catInput" class="w-8 h-8 mb-2" type="checkbox">
+      <label for="catInput">貓貓好可愛</label>
+      <img src="../assets/images/cat.jpg" class="w-80 h-80 object-cover" alt="cat" />
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
