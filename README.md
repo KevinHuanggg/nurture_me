@@ -24,18 +24,35 @@
 - **語言**: HTML, CSS, JavaScript
 - **套件管理**: npm
 
-## 專案啟動
+## 安裝與執行
 
-### 指令列表
+### 1. 安裝前準備
 
-- `npm install` - 初次下載該範例專案後，需要使用 npm install 來安裝套件
-- `npm run dev` - 執行開發模式
-  - 若沒有自動開啟瀏覽器，可嘗試手動在瀏覽器上輸入
-    `http://localhost:5173/<專案名稱>/pages/index.html`
-- `npm run build` - 執行編譯模式（不會開啟瀏覽器）
-- `npm run deploy` - 自動化部署
+- 安裝 [Node.js](https://nodejs.org/) 版本為 v20.17.0 (建議至少 16 以上。)
+- 安裝 npm 或 [yarn](https://yarnpkg.com/)
 
-### 資料夾結構
+### 2. 下載專案
+
+```bash
+git clone https://github.com/KevinHuanggg/nurture_me.git
+cd nurture_me
+```
+
+### 3. 安裝相依套件
+
+```bash
+npm install
+```
+
+### 4. 啟動開發伺服器
+
+```bash
+npm run dev
+```
+
+開發伺服器會在 `http://localhost:3000` 運行。
+
+## 資料夾結構
 
 ```bash
 nurture_me/
