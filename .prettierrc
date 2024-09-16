@@ -1,0 +1,13 @@
+{
+	"trailingComma": "es5",
+	"tabWidth": 4,
+	"semi": true,
+	"singleQuote": false,
+	"useTabs": true,
+	"bracketSpacing": true,
+	"arrowParens": "avoid",
+	"htmlWhiteSpaceSensitivity": "css",
+	"plugins": ["prettier-plugin-tailwindcss"],
+	"pluginSearchDirs": false,
+	"tailwindConfig": "./tailwind.config.js"
+}

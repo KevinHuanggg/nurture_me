@@ -29,7 +29,6 @@
 ### 1. 安裝前準備
 
 - 安裝 [Node.js](https://nodejs.org/) 版本為 v20.17.0 (建議至少 16 以上。)
-- 安裝 npm 或 [yarn](https://yarnpkg.com/)
 
 ### 2. 下載專案
 
