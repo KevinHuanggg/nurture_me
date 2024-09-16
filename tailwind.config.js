@@ -3,6 +3,18 @@ export default {
 	content: ["./pages/**/*.html", "./layout/**/*.ejs", "./main.js"],
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: [
+					'"Noto Sans TC"',
+					"ui-sans-serif",
+					"system-ui",
+					"sans-serif",
+					'"Apple Color Emoji"',
+					'"Segoe UI Emoji"',
+					'"Segoe UI Symbol"',
+					'"Noto Color Emoji"',
+				],
+			},
 			colors: {
 				primary: {
 					DEFAULT: "#27337B",
