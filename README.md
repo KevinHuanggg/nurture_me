@@ -10,25 +10,25 @@
 
 ## 特色功能
 
-- 查看流浪動物的詳細資料，包含圖片、故事、和需求。
-- 使用者可以選擇贊助特定動物，追蹤贊助進度。
+-   查看流浪動物的詳細資料，包含圖片、故事、和需求。
+-   使用者可以選擇贊助特定動物，追蹤贊助進度。
 
 ## Node.js 版本
 
-- 專案的 Node.js 版本為 v20.17.0
+-   專案的 Node.js 版本為 v20.17.0
 
 ## 使用技術
 
-- **開發和打包工具**: Vite
-- **CSS 框架**: Tailwind CSS
-- **語言**: HTML, CSS, JavaScript
-- **套件管理**: npm
+-   **開發和打包工具**: Vite
+-   **CSS 框架**: Tailwind CSS
+-   **語言**: HTML, CSS, JavaScript
+-   **套件管理**: npm
 
 ## 安裝與執行
 
 ### 1. 安裝前準備
 
-- 安裝 [Node.js](https://nodejs.org/) 版本為 v20.17.0 (建議至少 16 以上。)
+-   安裝 [Node.js](https://nodejs.org/) 版本為 v20.17.0 (建議至少 16 以上。)
 
 ### 2. 下載專案
 
@@ -54,38 +54,39 @@ npm run dev
 ## 資料夾結構
 
 ```bash
-nurture_me/
+nurture_me/             # 浪我包養
 │
 ├── assets/             # 靜態資源
 │   ├── css/            # CSS 的樣式放置處
-│   │   └── main.js     # Tailwind CSS 樣式
+│   │   └── main.css    # Tailwind CSS 樣式
 │   └── images/         # 圖片與資源文件
 ├── layout/             # ejs 模板放置處
 ├── pages/              # 頁面放置處
+├── .prettierrc         # 格式化檔案
 ├── main.js             # 入口文件
 ├── package.json        # 相依套件與腳本
 ├── README.md           # 本專案的 README
 ├── tailwind.config.js  # Tailwind 配置
-└── vite.config.js      # Tailwind 配置
+└── vite.config.js      # Vite 配置
 ```
 
 ## Author
 
 👤 **Shiloh**
 
-- Github: [@MinMinTW](https://github.com/MinMinTW)
+-   Github: [@MinMinTW](https://github.com/MinMinTW)
 
 👤 **Morning**
 
-- Github: [@Morning1996](https://github.com/Morning1996)
+-   Github: [@Morning1996](https://github.com/Morning1996)
 
 👤 **毛巾**
 
-- Github: [@Maojin-juan](https://github.com/Maojin-juan)
+-   Github: [@Maojin-juan](https://github.com/Maojin-juan)
 
 👤 **Kevin Huang**
 
-- Github: [@KevinHuanggg](https://github.com/KevinHuanggg)
+-   Github: [@KevinHuanggg](https://github.com/KevinHuanggg)
 
 ## Show your support
 
