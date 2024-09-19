@@ -18,6 +18,14 @@ export default {
 
 			fontSize: {
 				// H1 到 H7 通用類別樣式設定
+				heading: [
+					"80px",
+					{
+						lineHeight: "1.2",
+						letterSpacing: "0.04em",
+						fontWeight: "700",
+					},
+				],
 				h1: [
 					"64px",
 					{
@@ -127,6 +135,11 @@ export default {
 				highlight: {
 					DEFAULT: "#FFEE75",
 				},
+			},
+
+			backgroundImage: {
+				donation_banner:
+					"url('/assets/images/donation/donation_banner.jpg')",
 			},
 		},
 
