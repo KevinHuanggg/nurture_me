@@ -9,3 +9,36 @@
 		@apply font-sans;
 	}
 }
+
+@layer components {
+	.menu-icon_hamburger::before,
+	.menu-icon_hamburger::after {
+		@apply transition-ham absolute left-0 h-0.5 w-[24px] rounded bg-white content-[''];
+	}
+
+	.menu-icon_hamburger::before {
+		transform: translateY(-9px);
+	}
+
+	.menu-icon_hamburger::after {
+		transform: translateY(9px);
+	}
+
+	.hamburgerOpen .menu-icon_hamburger {
+		@apply translate-x-7 bg-transparent;
+	}
+
+	.hamburgerOpen .menu-icon_hamburger::before {
+		@apply -translate-x-7 rotate-[135deg];
+	}
+
+	.hamburgerOpen .menu-icon_hamburger::after {
+		@apply -translate-x-7 -rotate-[135deg];
+	}
+}
+
+@layer utilities {
+	.transition-ham {
+		transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+}
