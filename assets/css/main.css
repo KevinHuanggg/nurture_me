@@ -11,28 +11,32 @@
 }
 
 @layer components {
-	.menu-icon_hamburger::before,
-	.menu-icon_hamburger::after {
+	/* navbarList */
+	.decorated-link {
+		@apply relative block px-6 py-3 transition-all hover:text-white xl:py-3.5;
+	}
+	.decorated-link::after {
+		@apply absolute bottom-2.5 left-0 h-[7px] w-full bg-[url('/assets/svg/menu/baseline.svg')] bg-contain bg-center bg-no-repeat opacity-0 transition-all content-[''] hover:opacity-100 xl:h-2.5;
+	}
+
+	/* hamburgerMenuButton */
+	.hamburgerIcon::before,
+	.hamburgerIcon::after {
 		@apply transition-ham absolute left-0 h-0.5 w-[24px] rounded bg-white content-[''];
 	}
-
-	.menu-icon_hamburger::before {
+	.hamburgerIcon::before {
 		transform: translateY(-9px);
 	}
-
-	.menu-icon_hamburger::after {
+	.hamburgerIcon::after {
 		transform: translateY(9px);
 	}
-
-	.hamburgerOpen .menu-icon_hamburger {
+	.hamburgerOpen .hamburgerIcon {
 		@apply translate-x-7 bg-transparent;
 	}
-
-	.hamburgerOpen .menu-icon_hamburger::before {
+	.hamburgerOpen .hamburgerIcon::before {
 		@apply -translate-x-7 rotate-[135deg];
 	}
-
-	.hamburgerOpen .menu-icon_hamburger::after {
+	.hamburgerOpen .hamburgerIcon::after {
 		@apply -translate-x-7 -rotate-[135deg];
 	}
 }

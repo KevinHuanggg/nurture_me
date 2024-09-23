@@ -1,54 +1,85 @@
-<nav
-	class="fixed z-10 w-full bg-primary-1 bg-cover md:bg-transparent md:bg-[url('/assets/svg/wave/wave3.svg')]"
->
-	<div class="container flex w-full justify-between bg-no-repeat px-3 py-2">
-		<h1>
-			<a class="h-full" href="#">
-				<img
-					class="h-full px-px py-1 md:hidden"
-					src="/assets/svg/logo/logoWhite_S.svg"
-					alt="Logo"
-				/>
-				<img
-					class="hidden h-full px-0.5 py-2 md:block"
-					src="/assets/svg/logo/logoWhite_L.svg"
-					alt="Logo"
-				/>
-			</a>
-		</h1>
+<nav class="pt-[60px] xl:pt-20">
+	<div
+		class="fixed left-0 top-0 z-10 w-full bg-primary-1 bg-cover bg-no-repeat xl:bg-transparent xl:bg-[url('/assets/svg/wave/wave3.svg')]"
+	>
+		<div
+			class="container flex w-full justify-between bg-no-repeat px-3 py-2"
+		>
+			<h1>
+				<a class="flex h-full items-center" href="#">
+					<img
+						class="px-px py-1 xl:h-16 xl:px-0.5 xl:py-2"
+						src="/assets/svg/logo/logoWhite.svg"
+						alt="HeaderLogo"
+					/>
+				</a>
+			</h1>
 
-		<div class="flex items-center gap-x-2 xl:flex-row-reverse">
-			<a href="#">
-				<img
-					class="md:hidden"
-					src="/assets/svg/materialIcon/cart_S.svg"
-					alt="Cart"
-				/>
-				<img
-					class="hidden md:block"
-					src="/assets/svg/materialIcon/cart_L.svg"
-					alt="Cart"
-				/>
-			</a>
-			<button
-				type="button"
-				class="z-10 flex size-11 cursor-pointer items-center justify-center p-2 xl:hidden"
-				id="hamburgerMenu"
-			>
-				<div
-					class="menu-icon_hamburger transition-ham relative h-0.5 w-[24px] rounded bg-white"
-				></div>
-			</button>
+			<div class="flex items-center gap-x-2">
+				<ul
+					class="container hidden gap-x-4 text-right font-bold leading-[1.2rem] text-primary-4 xl:flex xl:text-xl xl:leading-6"
+				>
+					<li>
+						<a class="decorated-link" href="#">關於我們</a>
+					</li>
+					<li>
+						<a class="decorated-link" href="/pages/donation.html"
+							>立即幫助</a
+						>
+					</li>
+					<li>
+						<a class="decorated-link" href="/pages/about.html"
+							>線上認養</a
+						>
+					</li>
+					<li>
+						<a class="decorated-link" href="/pages/news.html"
+							>最新消息</a
+						>
+					</li>
+					<li>
+						<a
+							href="#"
+							class="block px-6 py-3 text-secondary-3 xl:py-3.5"
+							>登入/註冊</a
+						>
+					</li>
+				</ul>
+				<a href="#">
+					<img src="/assets/svg/materialIcon/cart.svg" alt="Cart" />
+				</a>
+				<button
+					type="button"
+					class="z-10 flex size-11 cursor-pointer items-center justify-center p-2 xl:hidden"
+					id="hamburgerMenu"
+				>
+					<div
+						class="hamburgerIcon transition-ham relative h-0.5 w-[24px] rounded bg-white"
+					></div>
+				</button>
+			</div>
 		</div>
 	</div>
-	<div class="bg-primary-1 xl:pt-0">
+
+	<div
+		class="transition-ham h-0 overflow-hidden bg-primary-1 xl:hidden"
+		id="hamburgerList"
+	>
 		<ul
-			class="container gap-x-4 text-right font-bold leading-[1.2rem] text-primary-4 xl:flex xl:text-xl xl:leading-6"
+			class="container flex flex-col items-end font-bold leading-[1.2rem] text-primary-4"
 		>
-			<li><a class="block px-6 py-3 xl:py-3.5" href="#">關於我們</a></li>
-			<li><a class="block px-6 py-3 xl:py-3.5" href="#">立即幫助</a></li>
-			<li><a class="block px-6 py-3 xl:py-3.5" href="#">線上認養</a></li>
-			<li><a class="block px-6 py-3 xl:py-3.5" href="#">最新消息</a></li>
+			<li><a class="decorated-link" href="#">關於我們</a></li>
+			<li>
+				<a class="decorated-link" href="/pages/donation.html"
+					>立即幫助</a
+				>
+			</li>
+			<li>
+				<a class="decorated-link" href="/pages/about.html">線上認養</a>
+			</li>
+			<li>
+				<a class="decorated-link" href="/pages/news.html">最新消息</a>
+			</li>
 			<li>
 				<a href="#" class="block px-6 py-3 text-secondary-3 xl:py-3.5"
 					>登入/註冊</a
