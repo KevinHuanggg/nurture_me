@@ -22,7 +22,7 @@
 	/* hamburgerMenuButton */
 	.hamburgerIcon::before,
 	.hamburgerIcon::after {
-		@apply transition-ham absolute left-0 h-0.5 w-[24px] rounded bg-white content-[''];
+		@apply transition-burger absolute left-0 h-0.5 w-[24px] rounded bg-white content-[''];
 	}
 	.hamburgerIcon::before {
 		transform: translateY(-9px);
@@ -42,7 +42,13 @@
 }
 
 @layer utilities {
-	.transition-ham {
+	/* transition */
+	.transition-burger {
 		transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+
+	.vertical-text {
+		writing-mode: vertical-rl;
+		text-orientation: upright;
 	}
 }
