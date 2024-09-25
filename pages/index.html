@@ -8,30 +8,56 @@
 	</head>
 	<body>
 		<%- include('./layout/header'); -%>
-		<main
-			class="flex flex-col justify-center overflow-x-hidden bg-primary-1 py-10 lg:flex-row-reverse lg:justify-between lg:pe-[184px] lg:ps-[272px] lg:pt-[220px]"
-		>
+		<main class="overflow-hidden bg-primary-1">
 			<div
-				class="relative z-10 mx-auto mb-6 px-[21px] after:absolute after:-top-6 after:left-[29px] after:-z-10 after:h-[396px] after:w-[368px] after:bg-[url('/assets/svg/bgShadow/bgShadow.svg')] after:bg-no-repeat"
+				class="flex flex-col items-center justify-center gap-x-[61px] py-10 md:flex-row-reverse md:px-8 xl:pt-[220px] 2xl:pe-[184px] 2xl:ps-[272px]"
 			>
-				<img
-					class="max-w-[680px]"
-					src="/assets/svg/randomShapeImg/indexImg.svg"
-					alt="cat"
-				/>
-			</div>
-			<div class="container">
-				<h2
-					class="flex flex-col gap-y-1 pe-[30px] ps-6 text-h3 text-white"
+				<div
+					class="afterDecoration z-10 mb-6 px-[21px] after:-top-6 after:left-[29px] after:-z-10 after:h-[396px] after:w-[368px] after:bg-[url('/assets/svg/bgShadow/bgShadow.svg')] md:px-0 2xl:h-[670px] 2xl:w-[680px]"
 				>
-					<span>毛孩子們的</span>
-					<span class="self-end">夢想樂園</span>
-				</h2>
+					<img
+						class="h-auto w-full"
+						src="/assets/svg/randomShapeImg/indexImg.svg"
+						alt="cat"
+					/>
+				</div>
+				<div>
+					<h2
+						class="mb-11 flex flex-col items-center gap-y-1 whitespace-nowrap ps-6 text-h3 text-white lg:flex-row lg:ps-0 2xl:text-[80px] 2xl:leading-[6rem]"
+					>
+						<span
+							class="beforeDecoration me-24 before:-left-[27px] before:-top-[13px] before:h-[34px] before:w-[45px] before:bg-[url('/assets/svg/paw/titlePaw.svg')] before:bg-cover lg:me-0 before:2xl:-left-[82px] before:2xl:-top-[50px] before:2xl:h-[98px] before:2xl:w-32"
+							>毛孩子們的</span
+						>
+						<span
+							class="afterDecoration ms-[108px] after:-bottom-5 after:-left-2 after:h-[19px] after:w-[186px] after:bg-[url('/assets/svg/underline/underline.svg')] after:bg-cover lg:ms-0"
+							>夢想樂園</span
+						>
+					</h2>
+					<div class="mx-auto max-w-[327px] 2xl:max-w-[723px]">
+						<div
+							class="beforeDecoration mx-auto max-w-[327px] space-y-4 ps-5 font-normal text-white before:left-0 before:h-full before:w-2 before:rounded-2xl before:bg-primary-2 md:mx-0 md:max-w-full 2xl:ps-10 2xl:text-fs-2 before:2xl:w-4"
+						>
+							<p>
+								在浪我包養，我們的願景是為每隻毛孩子打造一個充滿愛與關懷的家園。
+							</p>
+							<p>
+								讓每一個毛茸茸的夥伴都能感受到溫暖與快樂，我們相信你的參與可以改變牠們的一生。
+							</p>
+						</div>
+						<div class="mt-6 flex justify-center md:justify-start">
+							<a
+								class="transition-ham rounded-2xl bg-secondary-1 px-6 py-4 text-h7 text-white hover:bg-secondary-2 lg:px-10 lg:py-6 lg:text-h4"
+								href="/pages/donation.html"
+								>立即幫助</a
+							>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
-
+		<section class="h-96"></section>
 		<%- include('./layout/footer'); -%>
-
 		<script type="module" src="../main.js"></script>
 	</body>
 </html>
