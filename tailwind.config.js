@@ -145,7 +145,7 @@ export default {
 
 		container: {
 			center: true,
-			padding: "12px",
+			padding: "24px",
 		},
 	},
 	plugins: [require("@tailwindcss/forms")],

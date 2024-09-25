@@ -4,28 +4,117 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>index</title>
+		<title>donation</title>
 	</head>
 	<body>
 		<%- include('./layout/header'); -%>
 
 		<section
-			class="bg-donation_banner relative bg-cover bg-center before:absolute before:inset-0 before:bg-primary-1 before:opacity-30"
+			class="relative bg-donation_banner bg-cover bg-center before:absolute before:inset-0 before:bg-primary-1 before:opacity-30"
 		>
 			<div
 				class="container relative z-10 px-[3] pb-[48px] pt-[134px] lg:pb-[160px] lg:pt-[240px]"
 			>
-				<h5 class="lg:text-heading mb-4 text-h5 text-white lg:mb-2">
+				<h5 class="mb-4 text-h5 text-white lg:mb-2 lg:text-heading">
 					感謝您的善舉，
 				</h5>
-				<h5 class="lg:text-heading text-h5 text-white">
+				<h5 class="text-h5 text-white lg:text-heading">
 					每一份捐贈都在為生命譜寫奇蹟
 				</h5>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="relative inline-block text-left"></div>
+				<div>
+					<!-- Button -->
+					<button
+						type="button"
+						class="inline-flex w-full justify-between rounded-[16px] bg-white px-6 py-4 text-sm font-semibold text-gray-900 shadow-lg ring-2 ring-inset ring-primary-3 transition-all duration-300 hover:bg-gray-50"
+						id="menu-button"
+						aria-expanded="true"
+						aria-haspopup="true"
+					>
+						<p class="text-h7 text-primary-3">捐物資</p>
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<rect
+								x="0.5"
+								y="0.5"
+								width="23"
+								height="23"
+								rx="11.5"
+								stroke="#7782B8"
+							/>
+							<path
+								d="M7.42693 12.4624L11.1565 16.192C11.7181 16.7536 12.6253 16.7536 13.1869 16.192L16.9165 12.4624C17.8237 11.5552 17.1757 10 15.8941 10H8.43493C7.15333 10 6.51973 11.5552 7.42693 12.4624Z"
+								fill="#7782B8"
+							/>
+						</svg>
+					</button>
+				</div>
+
+				<!-- Dropdown Menu -->
+				<div
+					class="absolute right-6 z-10 mt-1 w-56 origin-top-right scale-95 transform rounded-md bg-white opacity-0 shadow-xl ring-1 ring-black ring-opacity-5 transition-all duration-300 ease-in-out focus:outline-none"
+					role="menu"
+					aria-orientation="vertical"
+					aria-labelledby="menu-button"
+					tabindex="-1"
+					id="dropdown-menu"
+				>
+					<div class="py-1" role="none">
+						<!-- Menu items with hover effect -->
+						<button
+							type="button"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
+							role="menuitem"
+							tabindex="-1"
+							id="menu-item-0"
+						>
+							捐物資
+						</button>
+						<button
+							type="button"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
+							role="menuitem"
+							tabindex="-1"
+							id="menu-item-1"
+						>
+							捐款
+						</button>
+						<button
+							type="button"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
+							role="menuitem"
+							tabindex="-1"
+							id="menu-item-2"
+						>
+							義賣
+						</button>
+						<button
+							type="submit"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
+							role="menuitem"
+							tabindex="-1"
+							id="menu-item-3"
+						>
+							線上認養
+						</button>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<%- include('./layout/footer'); -%>
 
 		<script type="module" src="../main.js"></script>
+		<script type="module" src="./danation.js"></script>
 	</body>
 </html>
