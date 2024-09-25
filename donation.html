@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about</title>
-    <script type="module" crossorigin src="/nurture_me/assets/main-2e374aef.js"></script>
-    <link rel="stylesheet" href="/nurture_me/assets/main-838e3704.css">
-  </head>
-  <body>
-    <nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>donation page</title>
+		<script type="module" crossorigin src="/nurture_me/assets/donation-3f5d629a.js"></script>
+		<link rel="modulepreload" crossorigin href="/nurture_me/assets/main-2e374aef.js">
+		<link rel="stylesheet" href="/nurture_me/assets/main-838e3704.css">
+	</head>
+	<body>
+		<nav>
 	<div
 		class="fixed left-0 top-0 z-50 w-full bg-primary-1 bg-cover bg-no-repeat xl:bg-transparent xl:bg-[url('/assets/svg/wave/wave3.svg')]"
 	>
@@ -99,8 +100,154 @@
 		</ul>
 	</div>
 </nav>
-    <h1>我是about</h1>
-    <footer
+
+		<section
+			class="relative bg-donation_banner bg-cover bg-center before:absolute before:inset-0 before:bg-primary-1 before:opacity-30"
+		>
+			<div
+				class="container relative z-10 px-[3] pb-[48px] pt-[134px] lg:pb-[160px] lg:pt-[240px]"
+			>
+				<h5 class="mb-4 text-h5 text-white lg:mb-2 lg:text-heading">
+					感謝您的善舉，
+				</h5>
+				<h5 class="text-h5 text-white lg:text-heading">
+					每一份捐贈都在為生命譜寫奇蹟
+				</h5>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="lg:hidden">
+					<div class="py-3">
+						<!-- Button -->
+						<button
+							type="button"
+							class="inline-flex w-full justify-between rounded-[16px] bg-white px-6 py-4 text-sm font-semibold text-gray-900 shadow-lg ring-2 ring-inset ring-primary-3 transition-all duration-300 hover:bg-gray-50"
+							id="menu-button"
+							aria-expanded="true"
+							aria-haspopup="true"
+						>
+							<p class="text-h7 text-primary-3">捐物資</p>
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<rect
+									x="0.5"
+									y="0.5"
+									width="23"
+									height="23"
+									rx="11.5"
+									stroke="#7782B8"
+								/>
+								<path
+									d="M7.42693 12.4624L11.1565 16.192C11.7181 16.7536 12.6253 16.7536 13.1869 16.192L16.9165 12.4624C17.8237 11.5552 17.1757 10 15.8941 10H8.43493C7.15333 10 6.51973 11.5552 7.42693 12.4624Z"
+									fill="#7782B8"
+								/>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="hidden lg:block">
+					<div class="py-5">
+						<ul class="mx-[-24px] flex flex-wrap">
+							<li class="w-1/4 px-6">
+								<h2 class="text-h2 text-white opacity-70">
+									捐物資
+								</h2>
+								<img
+									src="/nurture_me/assets/donation_food-e689934e.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="w-1/4 px-6">
+								<h2 class="text-h2 text-white opacity-70">
+									捐款
+								</h2>
+								<img
+									src="/nurture_me/assets/donation_donate-11078699.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="w-1/4 px-6">
+								<h2 class="text-h2 text-white opacity-70">
+									義賣
+								</h2>
+								<img
+									src="/nurture_me/assets/donation_store-680f09c8.jpg"
+									alt=""
+								/>
+							</li>
+							<li class="w-1/4 px-6">
+								<h2 class="text-h2 text-white opacity-70">
+									線上認養
+								</h2>
+								<img
+									src="/nurture_me/assets/donation_adopt-3c903442.jpg"
+									alt=""
+								/>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Dropdown Menu -->
+				<div
+					class="absolute right-6 z-10 mt-1 w-56 origin-top-right scale-95 transform rounded-md bg-white opacity-0 shadow-xl ring-1 ring-black ring-opacity-5 transition-all duration-300 ease-in-out focus:outline-none"
+					role="menu"
+					aria-orientation="vertical"
+					aria-labelledby="menu-button"
+					tabindex="-1"
+					id="dropdown-menu"
+				>
+					<div class="py-1" role="none">
+						<!-- Menu items with hover effect -->
+						<button
+							type="button"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
+							role="menuitem"
+							tabindex="-1"
+							id="menu-item-0"
+						>
+							捐物資
+						</button>
+						<button
+							type="button"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
+							role="menuitem"
+							tabindex="-1"
+							id="menu-item-1"
+						>
+							捐款
+						</button>
+						<button
+							type="button"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
+							role="menuitem"
+							tabindex="-1"
+							id="menu-item-2"
+						>
+							義賣
+						</button>
+						<button
+							type="submit"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
+							role="menuitem"
+							tabindex="-1"
+							id="menu-item-3"
+						>
+							線上認養
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer
 	class="relative -z-50 overflow-y-hidden bg-primary-1 before:absolute before:-top-[30px] before:h-[30px] before:w-full before:bg-cover before:bg-no-repeat before:xl:bg-[url('/assets/svg/wave/wave4.svg')]"
 >
 	<div
@@ -184,6 +331,7 @@
 	</div>
 </footer>
 
-    
-  </body>
+		
+		
+	</body>
 </html>
