@@ -8,12 +8,14 @@
 	</head>
 	<body>
 		<%- include('./layout/header'); -%>
-		<main class="overflow-hidden bg-primary-1">
+		<main
+			class="afterDecoration relative bg-primary-1 after:absolute after:h-[60px] after:w-full after:bg-cover after:xl:bg-[url('/assets/svg/wave/wave2.svg')]"
+		>
 			<div
-				class="flex flex-col items-center justify-center gap-x-[61px] py-10 md:flex-row-reverse md:px-8 xl:pt-[220px] 2xl:pe-[184px] 2xl:ps-[272px]"
+				class="flex flex-col items-center justify-center gap-x-[61px] overflow-x-hidden py-10 md:flex-row-reverse md:px-8 xl:pb-[138px] xl:pt-[272px] 2xl:px-20"
 			>
 				<div
-					class="afterDecoration z-10 mb-6 px-[21px] after:-top-6 after:left-[29px] after:-z-10 after:h-[396px] after:w-[368px] after:bg-[url('/assets/svg/bgShadow/bgShadow.svg')] md:px-0 2xl:h-[670px] 2xl:w-[680px]"
+					class="afterDecoration x-[21px] 2xl:ps- z-10 after:-top-6 after:left-2 after:-z-10 after:h-[396px] after:w-[368px] after:bg-[url('/assets/svg/bgShadow/bgShadow.svg')] after:bg-cover md:px-0 2xl:h-[670px] 2xl:w-[680px] after:2xl:-top-8 after:2xl:left-[27px] after:2xl:h-[808px] after:2xl:w-[750px]"
 				>
 					<img
 						class="h-auto w-full"
@@ -21,16 +23,16 @@
 						alt="cat"
 					/>
 				</div>
-				<div>
+				<div class="mt-6 md:mt-0">
 					<h2
-						class="mb-11 flex flex-col items-center gap-y-1 whitespace-nowrap ps-6 text-h3 text-white lg:flex-row lg:ps-0 2xl:text-[80px] 2xl:leading-[6rem]"
+						class="mb-11 flex flex-col items-center gap-y-1 whitespace-nowrap ps-6 text-h3 text-white xl:mb-20 xl:flex-row xl:ps-0 2xl:text-[80px] 2xl:leading-[6rem]"
 					>
 						<span
-							class="beforeDecoration me-24 before:-left-[27px] before:-top-[13px] before:h-[34px] before:w-[45px] before:bg-[url('/assets/svg/paw/titlePaw.svg')] before:bg-cover lg:me-0 before:2xl:-left-[82px] before:2xl:-top-[50px] before:2xl:h-[98px] before:2xl:w-32"
+							class="beforeDecoration me-24 before:-left-[27px] before:-top-[13px] before:h-[34px] before:w-[45px] before:bg-[url('/assets/svg/paw/titlePaw.svg')] before:bg-cover xl:me-0 before:2xl:-left-[82px] before:2xl:-top-[50px] before:2xl:h-[98px] before:2xl:w-32"
 							>毛孩子們的</span
 						>
 						<span
-							class="afterDecoration ms-[108px] after:-bottom-5 after:-left-2 after:h-[19px] after:w-[186px] after:bg-[url('/assets/svg/underline/underline.svg')] after:bg-cover lg:ms-0"
+							class="afterDecoration ms-[108px] after:-bottom-5 after:-left-2 after:h-[19px] after:w-[186px] after:bg-[url('/assets/svg/underline/underline.svg')] after:bg-cover xl:ms-0 after:2xl:-bottom-10 after:2xl:-left-11 after:2xl:h-9 after:2xl:w-[380px]"
 							>夢想樂園</span
 						>
 					</h2>
@@ -47,7 +49,7 @@
 						</div>
 						<div class="mt-6 flex justify-center md:justify-start">
 							<a
-								class="transition-ham rounded-2xl bg-secondary-1 px-6 py-4 text-h7 text-white hover:bg-secondary-2 lg:px-10 lg:py-6 lg:text-h4"
+								class="transition-ham rounded-2xl bg-secondary-1 px-6 py-4 text-h7 text-white hover:bg-secondary-2 2xl:px-10 2xl:py-6 2xl:text-h4"
 								href="/pages/donation.html"
 								>立即幫助</a
 							>
