@@ -9,3 +9,46 @@
 		@apply font-sans;
 	}
 }
+
+@layer components {
+	/* navbarList */
+	.decorated-link {
+		@apply relative block px-6 py-3 transition-all hover:text-white xl:py-3.5;
+	}
+	.decorated-link::after {
+		@apply absolute bottom-2.5 left-0 h-[7px] w-full bg-[url('/assets/svg/menu/baseline.svg')] bg-contain bg-center bg-no-repeat opacity-0 transition-all content-[''] hover:opacity-100 xl:h-2.5;
+	}
+
+	/* hamburgerMenuButton */
+	.hamburgerIcon::before,
+	.hamburgerIcon::after {
+		@apply transition-burger absolute left-0 h-0.5 w-[24px] rounded bg-white content-[''];
+	}
+	.hamburgerIcon::before {
+		transform: translateY(-9px);
+	}
+	.hamburgerIcon::after {
+		transform: translateY(9px);
+	}
+	.hamburgerOpen .hamburgerIcon {
+		@apply translate-x-7 bg-transparent;
+	}
+	.hamburgerOpen .hamburgerIcon::before {
+		@apply -translate-x-7 rotate-[135deg];
+	}
+	.hamburgerOpen .hamburgerIcon::after {
+		@apply -translate-x-7 -rotate-[135deg];
+	}
+}
+
+@layer utilities {
+	/* transition */
+	.transition-burger {
+		transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+
+	.vertical-text {
+		writing-mode: vertical-rl;
+		text-orientation: upright;
+	}
+}

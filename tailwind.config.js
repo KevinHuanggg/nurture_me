@@ -146,6 +146,13 @@ export default {
 		container: {
 			center: true,
 			padding: "24px",
+			screens: {
+				sm: "564px",
+				md: "744px",
+				lg: "984px",
+				xl: "1164px",
+				"2xl": "1344px",
+			},
 		},
 	},
 	plugins: [require("@tailwindcss/forms")],

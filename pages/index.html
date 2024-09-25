@@ -1,22 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
-    <div class="container">
-      <h1 class="text-indigo-500 text-[120px]">我是首頁</h1>
-      <input id="catInput" class="w-8 h-8 mb-2" type="checkbox">
-      <label for="catInput">貓貓好可愛</label>
-      <img src="../assets/images/cat.jpg" class="w-80 h-80 object-cover" alt="cat" />
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>index</title>
+	</head>
+	<body>
+		<%- include('./layout/header'); -%>
+		<main
+			class="flex flex-col justify-center overflow-x-hidden bg-primary-1 py-10 lg:flex-row-reverse lg:justify-between lg:pe-[184px] lg:ps-[272px] lg:pt-[220px]"
+		>
+			<div
+				class="relative z-10 mx-auto mb-6 px-[21px] after:absolute after:-top-6 after:left-[29px] after:-z-10 after:h-[396px] after:w-[368px] after:bg-[url('/assets/svg/bgShadow/bgShadow.svg')] after:bg-no-repeat"
+			>
+				<img
+					class="max-w-[680px]"
+					src="/assets/svg/randomShapeImg/indexImg.svg"
+					alt="cat"
+				/>
+			</div>
+			<div class="container">
+				<h2
+					class="flex flex-col gap-y-1 pe-[30px] ps-6 text-h3 text-white"
+				>
+					<span>毛孩子們的</span>
+					<span class="self-end">夢想樂園</span>
+				</h2>
+			</div>
+		</main>
 
-    <%- include('./layout/footer'); -%>
+		<%- include('./layout/footer'); -%>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+		<script type="module" src="../main.js"></script>
+	</body>
 </html>

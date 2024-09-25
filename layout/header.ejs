@@ -1,4 +1,90 @@
-<h1 class="bg-primary">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<nav>
+	<div
+		class="fixed left-0 top-0 z-50 w-full bg-primary-1 bg-cover bg-no-repeat xl:bg-transparent xl:bg-[url('/assets/svg/wave/wave3.svg')]"
+	>
+		<div
+			class="flex w-full justify-between bg-no-repeat px-3 py-2 xl:container"
+		>
+			<h1>
+				<a class="flex h-full items-center" href="#">
+					<img
+						class="px-px py-1 xl:h-16 xl:px-0.5 xl:py-2"
+						src="/assets/svg/logo/logoWhite.svg"
+						alt="HeaderLogo"
+					/>
+				</a>
+			</h1>
+
+			<div class="flex items-center gap-x-2 xl:gap-x-0">
+				<ul
+					class="hidden gap-x-4 text-right font-bold leading-[1.2rem] text-primary-4 xl:flex xl:text-xl xl:leading-6"
+				>
+					<li>
+						<a class="decorated-link" href="#">關於我們</a>
+					</li>
+					<li>
+						<a class="decorated-link" href="/pages/donation.html"
+							>立即幫助</a
+						>
+					</li>
+					<li>
+						<a class="decorated-link" href="/pages/about.html"
+							>線上認養</a
+						>
+					</li>
+					<li>
+						<a class="decorated-link" href="/pages/news.html"
+							>最新消息</a
+						>
+					</li>
+					<li>
+						<a
+							href="#"
+							class="block px-6 py-3 text-secondary-3 xl:py-3.5"
+							>登入/註冊</a
+						>
+					</li>
+				</ul>
+				<a href="#">
+					<img src="/assets/svg/materialIcon/cart.svg" alt="Cart" />
+				</a>
+				<button
+					type="button"
+					class="z-10 flex size-11 cursor-pointer items-center justify-center p-2 xl:hidden"
+					id="hamburgerMenu"
+				>
+					<div
+						class="hamburgerIcon transition-burger relative h-0.5 w-[24px] rounded bg-white"
+					></div>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div
+		class="transition-burger h-0 overflow-hidden bg-primary-1 pt-[60px] xl:hidden"
+		id="hamburgerList"
+	>
+		<ul
+			class="container flex flex-col items-end font-bold leading-[1.2rem] text-primary-4"
+		>
+			<li><a class="decorated-link" href="#">關於我們</a></li>
+			<li>
+				<a class="decorated-link" href="/pages/donation.html"
+					>立即幫助</a
+				>
+			</li>
+			<li>
+				<a class="decorated-link" href="/pages/about.html">線上認養</a>
+			</li>
+			<li>
+				<a class="decorated-link" href="/pages/news.html">最新消息</a>
+			</li>
+			<li>
+				<a href="#" class="block px-6 py-3 text-secondary-3 xl:py-3.5"
+					>登入/註冊</a
+				>
+			</li>
+		</ul>
+	</div>
+</nav>
