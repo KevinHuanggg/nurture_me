@@ -141,6 +141,14 @@ export default {
 				donation_banner:
 					"url('/assets/images/donation/donation_banner.jpg')",
 			},
+
+			screens: {
+				sm: "564px",
+				md: "744px",
+				lg: "984px",
+				xl: "1164px",
+				"2xl": "1344px",
+			},
 		},
 
 		container: {
