@@ -64,8 +64,11 @@
 				<div class="hidden lg:block">
 					<div class="py-5">
 						<ul class="flex flex-wrap" id="donation_list">
-							<li class="relative w-1/4 px-6 active">
-								<a href="">
+							<li
+								class="relative w-1/4 px-6 active"
+								data-target="food_block"
+							>
+								<a>
 									<h2
 										class="absolute inset-0 z-20 flex items-center justify-center text-white text-h2"
 									>
@@ -83,8 +86,11 @@
 									</div>
 								</a>
 							</li>
-							<li class="relative w-1/4 px-6">
-								<a href="">
+							<li
+								class="relative w-1/4 px-6"
+								data-target="donate_block"
+							>
+								<a>
 									<h2
 										class="absolute inset-0 z-20 flex items-center justify-center text-white text-h2 opacity-70"
 									>
@@ -102,8 +108,11 @@
 									</div>
 								</a>
 							</li>
-							<li class="relative w-1/4 px-6">
-								<a href="">
+							<li
+								class="relative w-1/4 px-6"
+								data-target="store_block"
+							>
+								<a>
 									<h2
 										class="absolute inset-0 z-20 flex items-center justify-center text-white text-h2 opacity-70"
 									>
@@ -121,8 +130,11 @@
 									</div>
 								</a>
 							</li>
-							<li class="relative w-1/4 px-6">
-								<a href="">
+							<li
+								class="relative w-1/4 px-6"
+								data-target="adopt_block"
+							>
+								<a>
 									<h2
 										class="absolute inset-0 z-20 flex items-center justify-center text-white text-h2 opacity-70"
 									>
@@ -161,6 +173,7 @@
 							role="menuitem"
 							tabindex="-1"
 							id="menu-item-0"
+							data-target="food_block"
 						>
 							捐物資
 						</button>
@@ -170,6 +183,7 @@
 							role="menuitem"
 							tabindex="-1"
 							id="menu-item-1"
+							data-target="donate_block"
 						>
 							捐款
 						</button>
@@ -179,6 +193,7 @@
 							role="menuitem"
 							tabindex="-1"
 							id="menu-item-2"
+							data-target="store_block"
 						>
 							義賣
 						</button>
@@ -188,11 +203,25 @@
 							role="menuitem"
 							tabindex="-1"
 							id="menu-item-3"
+							data-target="adopt_block"
 						>
 							線上認養
 						</button>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<section>
+			<div id="food_block" class="content-section">捐物資的內容</div>
+			<div id="donate_block" class="hidden content-section">
+				捐款的內容
+			</div>
+			<div id="store_block" class="hidden content-section">
+				義賣的內容
+			</div>
+			<div id="adopt_block" class="hidden content-section">
+				線上認養的內容
 			</div>
 		</section>
 

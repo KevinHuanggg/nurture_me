@@ -62,3 +62,39 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 });
+
+//手機板切換對應區塊功能
+
+document.addEventListener("DOMContentLoaded", function () {
+	const buttons = document.querySelectorAll("#dropdown-menu button");
+	const sections = document.querySelectorAll(".content-section");
+
+	buttons.forEach(button => {
+		button.addEventListener("click", function () {
+			// 隱藏所有區塊
+			sections.forEach(section => section.classList.add("hidden"));
+
+			// 顯示當前點擊項目對應的區塊
+			const target = this.getAttribute("data-target");
+			document.getElementById(target).classList.remove("hidden");
+		});
+	});
+});
+
+//捉機板切換對應區塊功能
+
+document.addEventListener("DOMContentLoaded", function () {
+	const links = document.querySelectorAll("#donation_list li");
+	const sections = document.querySelectorAll(".content-section");
+
+	links.forEach(link => {
+		link.addEventListener("click", function () {
+			// 隱藏所有區塊
+			sections.forEach(section => section.classList.add("hidden"));
+
+			// 顯示當前點擊項目對應的區塊
+			const target = this.getAttribute("data-target");
+			document.getElementById(target).classList.remove("hidden");
+		});
+	});
+});
