@@ -140,6 +140,8 @@ export default {
 			backgroundImage: {
 				donation_banner:
 					"url('/assets/images/donation/donation_banner.jpg')",
+				news_banner:
+					"url('/assets/images/news/news_banner.jpg')"
 			},
 		},
 
