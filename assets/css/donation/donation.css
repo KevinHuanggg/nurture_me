@@ -1,0 +1,5 @@
+.active {
+	.effect {
+		@apply absolute inset-0 z-10 rounded-[40px] bg-[#F26348] opacity-70;
+	}
+}

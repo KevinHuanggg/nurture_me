@@ -143,11 +143,11 @@ export default {
 			},
 
 			screens: {
-				sm: "564px",
-				md: "744px",
-				lg: "984px",
-				xl: "1164px",
-				"2xl": "1344px",
+				sm: "576px",
+				md: "768px",
+				lg: "992px",
+				xl: "1200px",
+				"2xl": "1400px",
 			},
 		},
 
@@ -155,11 +155,11 @@ export default {
 			center: true,
 			padding: "24px",
 			screens: {
-				sm: "564px",
-				md: "744px",
-				lg: "984px",
-				xl: "1164px",
-				"2xl": "1344px",
+				sm: "576px",
+				md: "768px",
+				lg: "992px",
+				xl: "1200px",
+				"2xl": "1400px",
 			},
 		},
 	},
