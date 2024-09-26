@@ -2,4 +2,8 @@
 	.effect {
 		@apply absolute inset-0 z-10 rounded-[40px] bg-[#F26348] opacity-70;
 	}
+
+	img {
+		@apply border-8 border-secondary-2
+	}
 }
