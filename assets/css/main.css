@@ -8,6 +8,10 @@
 	html {
 		@apply font-sans;
 	}
+
+	body {
+		@apply flex min-h-screen flex-col;
+	}
 }
 
 @layer components {

@@ -8,14 +8,12 @@
 	</head>
 	<body>
 		<%- include('./layout/header'); -%>
-		<main
-			class="afterDecoration relative bg-primary-1 after:absolute after:h-[60px] after:w-full after:bg-cover after:xl:bg-[url('/assets/svg/wave/wave2.svg')]"
-		>
+		<main class="relative bg-primary-1">
 			<div
 				class="flex flex-col items-center justify-center gap-x-[61px] overflow-x-hidden py-10 md:flex-row-reverse md:px-8 xl:pb-[138px] xl:pt-[272px] 2xl:px-20"
 			>
 				<div
-					class="afterDecoration x-[21px] 2xl:ps- z-10 after:-top-6 after:left-2 after:-z-10 after:h-[396px] after:w-[368px] after:bg-[url('/assets/svg/bgShadow/bgShadow.svg')] after:bg-cover md:px-0 2xl:h-[670px] 2xl:w-[680px] after:2xl:-top-8 after:2xl:left-[27px] after:2xl:h-[808px] after:2xl:w-[750px]"
+					class="afterDecoration z-10 after:-top-6 after:left-2 after:-z-10 after:h-[396px] after:w-[368px] after:bg-[url('/assets/svg/bgShadow/bgShadow.svg')] after:bg-cover md:px-0 2xl:h-[670px] 2xl:w-[680px] after:2xl:-top-8 after:2xl:left-[27px] after:2xl:h-[808px] after:2xl:w-[750px]"
 				>
 					<img
 						class="h-auto w-full"
@@ -24,7 +22,7 @@
 					/>
 				</div>
 				<div class="mt-6 md:mt-0">
-					<h2
+					<h3
 						class="mb-11 flex flex-col items-center gap-y-1 whitespace-nowrap ps-6 text-h3 text-white xl:mb-20 xl:flex-row xl:ps-0 2xl:text-[80px] 2xl:leading-[6rem]"
 					>
 						<span
@@ -35,7 +33,7 @@
 							class="afterDecoration ms-[108px] after:-bottom-5 after:-left-2 after:h-[19px] after:w-[186px] after:bg-[url('/assets/svg/underline/underline.svg')] after:bg-cover xl:ms-0 after:2xl:-bottom-10 after:2xl:-left-11 after:2xl:h-9 after:2xl:w-[380px]"
 							>夢想樂園</span
 						>
-					</h2>
+					</h3>
 					<div class="mx-auto max-w-[327px] 2xl:max-w-[723px]">
 						<div
 							class="beforeDecoration mx-auto max-w-[327px] space-y-4 ps-5 font-normal text-white before:left-0 before:h-full before:w-2 before:rounded-2xl before:bg-primary-2 md:mx-0 md:max-w-full 2xl:ps-10 2xl:text-fs-2 before:2xl:w-4"
@@ -58,7 +56,63 @@
 				</div>
 			</div>
 		</main>
-		<section class="h-96"></section>
+		<section class="relative py-10">
+			<div class="absolute left-0 top-0 w-full">
+				<img
+					class="w-full"
+					src="/assets/svg/wave/wave2.svg"
+					alt="wave2"
+				/>
+			</div>
+			<div class="container">
+				<div
+					class="mb-6 space-y-4 text-center text-secondary-1 xl:space-y-2"
+				>
+					<h4
+						class="afterDecoration text-h4 after:-bottom-1.5 after:left-1/2 after:h-[18px] after:w-[320px] after:-translate-x-1/2 after:bg-[url('/assets/svg/underline/underline2.svg')]"
+					>
+						改變生活，從心開始
+					</h4>
+					<p class="font-bold leading-[1.2rem] tracking-[0.04rem]">
+						讓每個人都能參與到保護毛孩子的行動中來是我們的使命
+					</p>
+				</div>
+				<div
+					class="container space-y-8 text-center tracking-[0.02rem] text-primary-1"
+				>
+					<div class="space-y-4">
+						<img
+							class="mx-auto size-40 rounded-full"
+							src="/assets/images/index/rupixen-Q59HmzK38eQ-unsplash.jpg"
+							alt=""
+						/>
+						<h5
+							class="afterDecoration text-h5 after:bottom-0 after:left-0 after:h-2 after:w-32 after:rounded-2xl after:bg-primary-4"
+						>
+							線上贊助
+						</h5>
+						<p class="text-primary-2">
+							選擇你心儀的毛孩子,每月收到牠們的生活更新和可愛照片，感受到牠們的成長與變化。
+						</p>
+					</div>
+					<div class="space-y-4">
+						<img
+							class="mx-auto size-40 rounded-full"
+							src="/assets/images/index/yerlin-matu-GtwiBmtJvaU-unsplash.jpg"
+							alt=""
+						/>
+						<h5 class="text-h5">現場互動</h5>
+						<p class="text-primary-2">
+							與贊助對象零距離互動，給牠們帶來更多的歡樂和陪伴。
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="relative">
+			<div class="p-10"></div>
+			<%- include('./components/footerWave'); -%>
+		</section>
 		<%- include('./layout/footer'); -%>
 		<script type="module" src="../main.js"></script>
 	</body>
