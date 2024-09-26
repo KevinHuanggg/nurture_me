@@ -141,7 +141,11 @@ export default {
 				donation_banner:
 					"url('/assets/images/donation/donation_banner.jpg')",
 				news_banner:
-					"url('/assets/images/news/news_banner.jpg')"
+					"url('/assets/images/news/news_banner.jpg')",
+				news_banner2:
+					"url('/assets/images/news/news_feed.jpg')",
+				news_banner3:
+					"url('/assets/images/news/news_workshop.jpg')",
 			},
 		},
 

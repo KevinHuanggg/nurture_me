@@ -1,3 +1,5 @@
+import { Autoplay } from "swiper/modules";
+
 var swiper = new Swiper(".mySwiper", {
     loop: true,  // 讓輪播循環
     pagination: {
@@ -11,5 +13,7 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    
+    autoplay:{
+      delay: 4000,
+    }
   });
