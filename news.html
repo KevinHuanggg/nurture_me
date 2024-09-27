@@ -8,8 +8,8 @@
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script type="module" crossorigin src="/nurture_me/assets/main-774b64b2.js"></script>
-    <link rel="stylesheet" href="/nurture_me/assets/main-dbac0093.css">
+    <script type="module" crossorigin src="/nurture_me/assets/main-93047baa.js"></script>
+    <link rel="stylesheet" href="/nurture_me/assets/main-4cdca3fb.css">
   </head>
   <body>
     <nav>
@@ -107,7 +107,7 @@
 
     <div class="swiper mySwiper h-[720px] relative">
       <div class="swiper-wrapper ">
-        <div class="swiper-slide bg-news_banner bg-cover bg-center  relative flex flex-col justify-center ">
+        <div class="swiper-slide bg-news_banner bg-cover bg-center  relative flex flex-col xl:justify-center 2xl:pt-[226px] 2xl:justify-start">
           <div class="absolute inset-0 bg-primary-1 bg-opacity-30"></div>
           <div class="container z-10 grid grid-cols-12 gap-6 ">
             <div class="col-span-8">
@@ -118,7 +118,7 @@
           </div>
           
         </div>
-        <div class="swiper-slide bg-news_banner2 bg-cover bg-center  relative flex flex-col justify-center">
+        <div class="swiper-slide bg-news_banner2 bg-cover bg-center  relative flex flex-col xl:justify-center 2xl:pt-[226px] 2xl:justify-start">
           <div class="absolute inset-0 bg-primary-1 bg-opacity-30"></div>
             <div class="container z-10 grid grid-cols-12 gap-6 ">
               <div class="col-span-8 ">
@@ -128,13 +128,13 @@
               </div>
           </div>
         </div>
-        <div class="swiper-slide bg-news_banner3 bg-cover bg-center  relative flex flex-col justify-center">
+        <div class="swiper-slide bg-news_banner3 bg-cover bg-center  relative flex flex-col xl:justify-center 2xl:pt-[226px] 2xl:justify-start">
           <div class="absolute inset-0 bg-primary-1 bg-opacity-30"></div>
-            <div class="container z-10 grid grid-cols-12 gap-6 ">
+            <div class="container z-10 grid grid-cols-12 gap-4">
               <div class="col-span-8 ">
-                <p class="text-h3 text-white mb-4">2024年10月5日</p>
-                <h2 class="text-white text-h1 mb-8">「一起關心流浪動物」志願者招募活動</h2>
-                <p class="text-fs-3 text-white">我們將於2024年10月15日在社區中心舉行「一起關心流浪動物」志願者招募活動。活動將介紹如何參與流浪動物救助，並提供志願服務的培訓...</p>
+                <p class="2xl:text-h3 text-white mb-4">2024年10月5日</p>
+                <h2 class="2xl:text-white text-h1 mb-8">「一起關心流浪動物」志願者招募活動</h2>
+                <p class="2xl:text-fs-3 text-white">我們將於2024年10月15日在社區中心舉行「一起關心流浪動物」志願者招募活動。活動將介紹如何參與流浪動物救助，並提供志願服務的培訓...</p>
               </div>
           </div>
         </div>
@@ -142,7 +142,8 @@
       </div>
 
         <!-- 如果需要導航按鈕 推margin的部分再想一下-->
-        <div class="swiper-button-next after:content-none bg-white rounded-full w-[80px] h-[80px] p-4 bg-opacity-50  2xl:me-[200px]">
+      
+        <div class="swiper-button-next after:content-none bg-white rounded-full w-[80px] h-[80px] p-4 bg-opacity-50 absolute right-[10%] hidden 2xl:block">
           <!-- 新增自訂的箭頭圖示 -->
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5303 11.4697C21.8232 11.7626 21.8232 12.2374 21.5303 12.5303L13.0303 21.0303C12.7374 21.3232 12.2626 21.3232 11.9697 21.0303C11.6768 20.7374 11.6768 20.2626 11.9697 19.9697L19.1893 12.75L3 12.75C2.58579 12.75 2.25 12.4142 2.25 12C2.25 11.5858 2.58579 11.25 3 11.25L19.1893 11.25L11.9697 4.03033C11.6768 3.73744 11.6768 3.26256 11.9697 2.96967C12.2626 2.67678 12.7374 2.67678 13.0303 2.96967L21.5303 11.4697Z" fill="#7782B8"/>
@@ -151,13 +152,14 @@
             
         </div>
         
-        <div class="swiper-button-prev after:content-none bg-white rounded-full w-[80px] h-[80px] p-4 bg-opacity-50 2xl:ms-[200px]" >
+        <div class="swiper-button-prev after:content-none bg-white rounded-full w-[80px] h-[80px] p-4 bg-opacity-50 left-[10%] hidden 2xl:block" >
           <!-- 新增自訂的箭頭圖示 -->
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M2.46967 12.5303C2.17678 12.2374 2.17678 11.7626 2.46967 11.4697L10.9697 2.96967C11.2626 2.67678 11.7374 2.67678 12.0303 2.96967C12.3232 3.26256 12.3232 3.73744 12.0303 4.03033L4.81066 11.25L21 11.25C21.4142 11.25 21.75 11.5858 21.75 12C21.75 12.4142 21.4142 12.75 21 12.75L4.81066 12.75L12.0303 19.9697C12.3232 20.2626 12.3232 20.7374 12.0303 21.0303C11.7374 21.3232 11.2626 21.3232 10.9697 21.0303L2.46967 12.5303Z" fill="#7782B8"/>
             </svg>
             
         </div>
+
         
 
         <!-- 如果需要分頁器 -->
@@ -165,17 +167,53 @@
 
         </div>
         
-        <svg class="absolute bottom-0 z-20" width="1920" height="48" viewBox="0 0 1920 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path id="Wave 5" fill-rule="evenodd" clip-rule="evenodd" d="M1919.93 41.5633C1919.93 41.5633 1623.09 25.1422 1470.38 27.9414C1317.67 30.7405 1279.63 31.5327 1198.12 27.9413C1116.61 24.35 727.448 -3.04214 546.382 0.279024C365.317 3.60018 69.354 23.1778 3.60616e-06 6.7507L0 48.0003L1920 48.0005L1919.93 41.5633Z" fill="#C3C8E1"/>
-          </svg>
-      </div>
-      <div class="bg-primary-4 h-[120px]">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <div class="relative">
+          <svg class="absolute bottom-0 z-20" width="1920" height="48" viewBox="0 0 1920 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path id="Wave 5" fill-rule="evenodd" clip-rule="evenodd" d="M1919.93 41.5633C1919.93 41.5633 1623.09 25.1422 1470.38 27.9414C1317.67 30.7405 1279.63 31.5327 1198.12 27.9413C1116.61 24.35 727.448 -3.04214 546.382 0.279024C365.317 3.60018 69.354 23.1778 3.60616e-06 6.7507L0 48.0003L1920 48.0005L1919.93 41.5633Z" fill="#C3C8E1"/>
+            </svg>
+        </div>
+ </div>
+
+
+      <div class="bg-primary-4 h-[120px] px-[120px] py-[20px]">
+        <ul class="px-[60px] flex">
+          <li class="border-r border-primary-3">
+            <a href="#" class="flex items-center">
+              <div class="w-[80px] h-[80px] overflow-hidden">
+                <img class="w-full h-full object-cover" src="/nurture_me/assets/news_feed-b327a429.jpg" alt="支持園區飼料">
+              </div>
+              <p class="text-h6 text-primary-2 ps-[12px] pe-[14px]">支持園區飼料</p>
+            </a>
+          </li>
+          <li class="border-r border-primary-3 ms-[16px]">
+            <a href="#" class="flex items-center">
+              <div class="w-[80px] h-[80px] overflow-hidden">
+                <img class="w-full h-full object-cover" src="/nurture_me/assets/news_crowdfunding-795020eb.jpg" alt="新建流浪動物收容所募資進展">
+              </div>
+              <p class="text-h6 text-primary-2 ps-[12px] pe-[14px]">新建流浪動物收容所募資進展</p>
+            </a>
+          </li>
+          <li class="border-r border-primary-3 ms-[16px]">
+            <li class="border-r border-primary-3">
+              <a href="#" class="flex items-center">
+                <div class="w-[80px] h-[80px] overflow-hidden">
+                  <img class="w-full h-full object-cover" src="/nurture_me/assets/news_presents-d7834cbd.jpg" alt="浪我包養年末捐款送好禮！">
+                </div>
+                <p class="text-h6 text-primary-2 ps-[12px] pe-[14px]">浪我包養年末捐款送好禮！</p>
+              </a>
+            </li>
+          </li>
+          <li class="ms-[16px]">
+            <a href="#" class="flex items-center">
+              <div class="w-[80px] h-[80px] overflow-hidden">
+                <img class="w-full h-full object-cover" src="/nurture_me/assets/news_gotoschool-daf929b1.jpg" alt="【浪犬「趣」上學】融入新家">
+              </div>
+              <p class="text-h6 text-primary-2 ps-[12px]">【浪犬「趣」上學】融入新家</p>
+            </a>
+          </li>
         </ul>
+        
+        
       </div>
      
     
