@@ -10,9 +10,9 @@
 		/>
 		
 		<title>donation page</title>
-		<script type="module" crossorigin src="/nurture_me/assets/donation-6b5e1c7e.js"></script>
-		<link rel="modulepreload" crossorigin href="/nurture_me/assets/main-a7db8d26.js">
-		<link rel="stylesheet" href="/nurture_me/assets/main-97ca4006.css">
+		<script type="module" crossorigin src="/nurture_me/assets/donation-fe499b8f.js"></script>
+		<link rel="modulepreload" crossorigin href="/nurture_me/assets/main-0a7c69b4.js">
+		<link rel="stylesheet" href="/nurture_me/assets/main-e915604e.css">
 		<link rel="stylesheet" href="/nurture_me/assets/donation-a64ad946.css">
 	</head>
 	<body>
@@ -105,20 +105,30 @@
 			class="relative bg-donation_banner bg-cover bg-center before:absolute before:inset-0 before:bg-primary-1 before:opacity-30"
 		>
 			<div
-				class="container relative z-10 px-[3] pb-[48px] pt-[134px] lg:pb-[160px] lg:pt-[240px]"
+				class="container relative z-10 pb-[48px] pt-[134px] xl:pb-[160px] xl:pt-[240px]"
 			>
-				<h5 class="mb-4 text-h5 text-white lg:mb-2 lg:text-heading">
+				<h5 class="mb-4 text-h5 text-white xl:mb-2 xl:text-heading">
 					感謝您的善舉，
 				</h5>
-				<h5 class="text-h5 text-white lg:text-heading">
+				<h5 class="text-h5 text-white xl:text-heading">
 					每一份捐贈都在為生命譜寫奇蹟
 				</h5>
 			</div>
+			<img
+				src="/nurture_me/assets/donation_wave13-white-70436cc7.svg"
+				class="absolute bottom-0 h-auto w-full lg:hidden"
+				alt="波浪裝飾"
+			/>
+			<img
+				src="/nurture_me/assets/donation_wave3-white-d796b7c9.svg"
+				class="absolute bottom-0 hidden h-auto w-full lg:block"
+				alt="波浪裝飾"
+			/>
 		</section>
 
 		<section>
 			<div class="container">
-				<div class="lg:hidden">
+				<div class="xl:hidden">
 					<div class="py-3">
 						<!-- Button -->
 						<button
@@ -152,7 +162,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="hidden lg:block">
+				<div class="hidden xl:block">
 					<div class="py-5">
 						<ul class="flex flex-wrap" id="donation_list">
 							<li
@@ -303,18 +313,29 @@
 			</div>
 		</section>
 
-		<section>
+		<main>
+			<!-- 捐物資區塊內容 -->
+
 			<div id="food_block" class="content-section">捐物資的內容</div>
+
+			<!-- 捐款區塊內容 -->
+
 			<div id="donate_block" class="content-section hidden">
 				捐款的內容
 			</div>
+
+			<!-- 義賣區塊內容 -->
+
 			<div id="store_block" class="content-section hidden">
 				義賣的內容
 			</div>
+
+			<!-- 線上認養區塊內容 -->
+
 			<div id="adopt_block" class="content-section hidden">
 				線上認養的內容
 			</div>
-		</section>
+		</main>
 
 		<footer
 	class="relative -z-50 overflow-y-hidden bg-primary-1 before:absolute before:-top-[30px] before:h-[30px] before:w-full before:bg-cover before:bg-no-repeat before:xl:bg-[url('/assets/svg/wave/wave4.svg')]"
