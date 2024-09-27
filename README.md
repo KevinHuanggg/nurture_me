@@ -6,7 +6,7 @@
 
 ### ✨ [Demo](https://kevinhuanggg.github.io/nurture_me/)
 
-![專案展示](../assets/images/demo.png)
+![專案展示](../assets/images/demo_pic.png)
 
 ## 特色功能
 
