@@ -1,3 +1,5 @@
+import "swiper/swiper-bundle.css";
+
 document.addEventListener("DOMContentLoaded", function () {
 	const menuButton = document.getElementById("menu-button");
 	const dropdownMenu = document.getElementById("dropdown-menu");
@@ -71,17 +73,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	buttons.forEach(button => {
 		button.addEventListener("click", function () {
-			// 隱藏所有區塊
+			// 1.先隱藏所有區塊
 			sections.forEach(section => section.classList.add("hidden"));
 
-			// 顯示當前點擊項目對應的區塊
+			// 2.再顯示當前點擊項目對應的區塊
 			const target = this.getAttribute("data-target");
 			document.getElementById(target).classList.remove("hidden");
 		});
 	});
 });
 
-//捉機板切換對應區塊功能
+//桌機板切換對應區塊功能
 
 document.addEventListener("DOMContentLoaded", function () {
 	const links = document.querySelectorAll("#donation_list li");
@@ -89,10 +91,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	links.forEach(link => {
 		link.addEventListener("click", function () {
-			// 隱藏所有區塊
+			// 1.先隱藏所有區塊
 			sections.forEach(section => section.classList.add("hidden"));
 
-			// 顯示當前點擊項目對應的區塊
+			// 2.再顯示當前點擊項目對應的區塊
 			const target = this.getAttribute("data-target");
 			document.getElementById(target).classList.remove("hidden");
 		});
