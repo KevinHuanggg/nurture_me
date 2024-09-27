@@ -155,16 +155,31 @@ export default {
 				xl: "1200px",
 				"2xl": "1400px",
 			},
+			animation: { //news跑馬燈
+				marquee: 'marquee 25s linear infinite',
+				marquee2: 'marquee2 25s linear infinite',
+			  },
+			  keyframes: {
+				marquee: {
+				  '0%': { transform: 'translateX(0%)' }, // 初始位置
+
+				  '100%': { transform: 'translateX(-100%)' }, // 滾動到最左側
+				},
+				marquee2: {
+				  '0%': { transform: 'translateX(100%)' }, // 初始位置
+				  '100%': { transform: 'translateX(0%)' }, // 滾動到最右側
+				},
+			  },
 		},
 
 		container: {
 			center: true,
 			padding: "24px",
 			screens: {
-				sm: "576px",
-				md: "768px",
-				lg: "992px",
-				xl: "1200px",
+				sm: "564px",
+				md: "744px",
+				lg: "984px",
+				xl: "1164px",
 				"2xl": "1344px",
 			},
 		},
