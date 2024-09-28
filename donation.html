@@ -10,9 +10,9 @@
 		/>
 		
 		<title>donation page</title>
-		<script type="module" crossorigin src="/nurture_me/assets/donation-fe499b8f.js"></script>
-		<link rel="modulepreload" crossorigin href="/nurture_me/assets/main-0a7c69b4.js">
-		<link rel="stylesheet" href="/nurture_me/assets/main-e915604e.css">
+		<script type="module" crossorigin src="/nurture_me/assets/donation-b1f2c93a.js"></script>
+		<link rel="modulepreload" crossorigin href="/nurture_me/assets/main-326a2c70.js">
+		<link rel="stylesheet" href="/nurture_me/assets/main-5d5068c1.css">
 		<link rel="stylesheet" href="/nurture_me/assets/donation-a64ad946.css">
 	</head>
 	<body>
@@ -105,12 +105,12 @@
 			class="relative bg-donation_banner bg-cover bg-center before:absolute before:inset-0 before:bg-primary-1 before:opacity-30"
 		>
 			<div
-				class="container relative z-10 pb-[48px] pt-[134px] xl:pb-[160px] xl:pt-[240px]"
+				class="container relative z-10 pb-[48px] pt-[134px] lg:pb-[160px] lg:pt-[240px]"
 			>
-				<h5 class="mb-4 text-h5 text-white xl:mb-2 xl:text-heading">
+				<h5 class="mb-4 text-h5 text-white lg:mb-2 lg:text-heading">
 					感謝您的善舉，
 				</h5>
-				<h5 class="text-h5 text-white xl:text-heading">
+				<h5 class="text-h5 text-white lg:text-heading">
 					每一份捐贈都在為生命譜寫奇蹟
 				</h5>
 			</div>
@@ -128,7 +128,7 @@
 
 		<section>
 			<div class="container">
-				<div class="xl:hidden">
+				<div class="lg:hidden">
 					<div class="py-3">
 						<!-- Button -->
 						<button
@@ -162,7 +162,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="hidden xl:block">
+				<div class="hidden lg:block">
 					<div class="py-5">
 						<ul class="flex flex-wrap" id="donation_list">
 							<li
@@ -313,10 +313,58 @@
 			</div>
 		</section>
 
-		<main>
+		<main class="container pb-[42px] pt-6">
 			<!-- 捐物資區塊內容 -->
 
-			<div id="food_block" class="content-section">捐物資的內容</div>
+			<div id="food_block" class="content-section">
+				<section class="flex justify-center">
+					<img
+						src="/nurture_me/assets/donation_warm_sm-86def28b.svg"
+						alt=""
+						class="mb-8 block lg:hidden"
+					/>
+					<img
+						src="/nurture_me/assets/donation_warm-6c97f392.svg"
+						alt=""
+						class="mb-8 hidden lg:block"
+					/>
+				</section>
+				<section>
+					<div class="relative mb-10 flex flex-col items-center">
+						<h4 class="text-h4 text-primary-1">給予毛孩一份溫暖</h4>
+						<div class="relative left-[58px] w-[158px]">
+							<img
+								src="/nurture_me/assets/donation_underline-50a220fb.svg"
+								alt="下底線圖片"
+								class="block w-full"
+							/>
+						</div>
+					</div>
+					<div class="flex flex-col justify-center gap-6">
+						<div
+							class="flex flex-col justify-center gap-3 text-fs-6 text-primary-2"
+						>
+							<p>我們園區裡，流浪至此的毛孩正等待著您的幫助。</p>
+							<p>
+								每一份捐贈的物資，無論是食物、保健品還是清潔用品，都能帶給這些小生命更多的希望和安全感。
+							</p>
+							<p>
+								您的支持，將是他們幸福生活的開始。請和我們一起，用愛心點亮牠們的未來。
+							</p>
+						</div>
+						<div
+							class="text-h8 relative flex flex-col gap-3 pl-5 text-secondary-1"
+						>
+							<div
+								class="absolute bottom-0 left-0 top-0 w-2 rounded-full bg-highlight"
+							></div>
+							<p>郵寄地址：快樂市寵物區幸福路 555 號</p>
+							<p>電話：04-12340000</p>
+							<p>聯絡人：來福</p>
+						</div>
+					</div>
+				</section>
+			</div>
 
 			<!-- 捐款區塊內容 -->
 
@@ -336,6 +384,16 @@
 				線上認養的內容
 			</div>
 		</main>
+		<img
+			src="/nurture_me/assets/donation_wave14-primary-d85bc675.svg"
+			alt=""
+			class="block h-auto w-full lg:hidden"
+		/>
+		<img
+			src="/nurture_me/assets/donation_wave4-primary-5b510b5b.svg"
+			alt=""
+			class="hidden h-auto w-full lg:block"
+		/>
 
 		<footer
 	class="relative -z-50 overflow-y-hidden bg-primary-1 before:absolute before:-top-[30px] before:h-[30px] before:w-full before:bg-cover before:bg-no-repeat before:xl:bg-[url('/assets/svg/wave/wave4.svg')]"
