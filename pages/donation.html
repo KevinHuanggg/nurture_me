@@ -226,10 +226,53 @@
 			</div>
 		</section>
 
-		<main>
+		<main class="container pb-[42px] pt-6">
 			<!-- 捐物資區塊內容 -->
 
-			<div id="food_block" class="content-section">捐物資的內容</div>
+			<div id="food_block" class="content-section">
+				<section class="flex justify-center">
+					<img
+						src="../assets/images/donation/donation_warm_sm.svg"
+						alt=""
+						class="mb-8 block lg:hidden"
+					/>
+					<img
+						src="../assets/images/donation/donation_warm.svg"
+						alt=""
+						class="mb-8 hidden lg:block"
+					/>
+				</section>
+				<section>
+					<h4 class="mb-10 text-center text-h4 text-primary-1">
+						給予毛孩一份溫暖
+					</h4>
+					<div class="flex flex-col justify-center gap-6">
+						<div
+							class="flex flex-col justify-center gap-3 text-fs-6 text-primary-2"
+						>
+							<p>我們園區裡，流浪至此的毛孩正等待著您的幫助。</p>
+							<p>
+								每一份捐贈的物資，無論是食物、保健品還是清潔用品，都能帶給這些小生命更多的希望和安全感。
+							</p>
+							<p>
+								您的支持，將是他們幸福生活的開始。請和我們一起，用愛心點亮牠們的未來。
+							</p>
+						</div>
+						<div class="relative pl-5">
+							<div
+								class="absolute bottom-0 left-0 top-0 w-2 rounded-full bg-highlight"
+							></div>
+							<p class="text-h8 text-secondary-1">
+								郵寄地址：快樂市寵物區幸福路 555 號
+							</p>
+							<p class="text-h8 text-secondary-1">
+								電話：04-12340000
+							</p>
+							<p class="text-h8 text-secondary-1">聯絡人：來福</p>
+						</div>
+					</div>
+				</section>
+			</div>
 
 			<!-- 捐款區塊內容 -->
 
@@ -249,6 +292,16 @@
 				線上認養的內容
 			</div>
 		</main>
+		<img
+			src="../assets/images/donation/donation_wave14-primary.svg"
+			alt=""
+			class="block h-auto w-full lg:hidden"
+		/>
+		<img
+			src="../assets/images/donation/donation_wave4-primary.svg"
+			alt=""
+			class="hidden h-auto w-full lg:block"
+		/>
 
 		<%- include('./layout/footer'); -%>
 
