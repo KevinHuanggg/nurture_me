@@ -88,6 +88,14 @@ export default {
 						fontWeight: "700",
 					},
 				],
+				h8: [
+					"16px",
+					{
+						lineHeight: "1.2",
+						letterSpacing: "0.04em",
+						fontWeight: "700",
+					},
+				],
 
 				// fs-1 到 fs-10 通用類別樣式設定
 				...(() => {
@@ -146,6 +154,33 @@ export default {
 			backgroundImage: {
 				donation_banner:
 					"url('/assets/images/donation/donation_banner.jpg')",
+				news_banner: "url('/assets/images/news/news_banner.jpg')",
+				news_banner2: "url('/assets/images/news/news_feed.jpg')",
+				news_banner3: "url('/assets/images/news/news_workshop.jpg')",
+			},
+
+			screens: {
+				sm: "576px",
+				md: "768px",
+				lg: "992px",
+				xl: "1200px",
+				"2xl": "1400px",
+			},
+			animation: {
+				//news跑馬燈
+				marquee: "marquee 25s linear infinite",
+				marquee2: "marquee2 25s linear infinite",
+			},
+			keyframes: {
+				marquee: {
+					"0%": { transform: "translateX(0%)" }, // 初始位置
+
+					"100%": { transform: "translateX(-100%)" }, // 滾動到最左側
+				},
+				marquee2: {
+					"0%": { transform: "translateX(100%)" }, // 初始位置
+					"100%": { transform: "translateX(0%)" }, // 滾動到最右側
+				},
 			},
 		},
 
@@ -170,5 +205,4 @@ export default {
 			},
 		},
 	},
-	plugins: [require("@tailwindcss/forms")],
 };
