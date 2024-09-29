@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ["./pages/**/*.html", "./layout/**/*.ejs", "./main.js"],
+	safelist: ["fixed"],
+	content: [
+		"./pages/**/*.html",
+		"./layout/**/*.ejs",
+		"./components/**/*.ejs",
+		"./main.js",
+	],
 	theme: {
 		extend: {
 			fontFamily: {
@@ -176,6 +182,15 @@ export default {
 					"100%": { transform: "translateX(0%)" }, // 滾動到最右側
 				},
 			},
+		},
+
+		screens: {
+			sm: "576px",
+			md: "768px",
+			lg: "992px",
+			xl: "1200px",
+			"2xl": "1400px",
+			"3xl": "1600px",
 		},
 
 		container: {

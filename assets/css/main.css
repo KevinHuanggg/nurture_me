@@ -8,6 +8,10 @@
 	html {
 		@apply font-sans;
 	}
+
+	body {
+		@apply flex min-h-screen flex-col;
+	}
 }
 
 @layer components {
@@ -38,6 +42,20 @@
 	}
 	.hamburgerOpen .hamburgerIcon::after {
 		@apply -translate-x-7 -rotate-[135deg];
+	}
+
+	/* pseudo-elements */
+	.afterDecoration {
+		@apply after:absolute after:bg-no-repeat;
+	}
+	.beforeDecoration {
+		@apply before:absolute before:bg-no-repeat;
+	}
+
+	/* indexSwiper */
+	.teamSwiper .swiper-pagination-bullet,
+	.storySwiper .swiper-pagination-bullet {
+		@apply size-2 bg-primary-3 xl:!mx-2 xl:size-4;
 	}
 }
 

@@ -1,5 +1,7 @@
 import "./assets/css/main.css";
+
 import "./js/hamburgerMenu";
-import "./js/news_swiper.js";
+import "./js/indexSwiper";
+import "./js/news_swiper";
 
 console.log("Hello world!");
