@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ["./pages/**/*.html", "./layout/**/*.ejs", "./main.js"],
+	safelist: ["fixed"],
+	content: [
+		"./pages/**/*.html",
+		"./layout/**/*.ejs",
+		"./components/**/*.ejs",
+		"./main.js",
+	],
 	theme: {
 		extend: {
 			fontFamily: {
@@ -149,6 +155,7 @@ export default {
 			lg: "992px",
 			xl: "1200px",
 			"2xl": "1400px",
+			"3xl": "1600px",
 		},
 
 		container: {

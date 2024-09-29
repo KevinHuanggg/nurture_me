@@ -44,11 +44,18 @@
 		@apply -translate-x-7 -rotate-[135deg];
 	}
 
+	/* pseudo-elements */
 	.afterDecoration {
-		@apply relative after:absolute after:bg-no-repeat;
+		@apply after:absolute after:bg-no-repeat;
 	}
 	.beforeDecoration {
-		@apply relative before:absolute before:bg-no-repeat;
+		@apply before:absolute before:bg-no-repeat;
+	}
+
+	/* indexSwiper */
+	.teamSwiper .swiper-pagination-bullet,
+	.storySwiper .swiper-pagination-bullet {
+		@apply size-2 bg-primary-3 xl:!mx-2 xl:size-4;
 	}
 }
 

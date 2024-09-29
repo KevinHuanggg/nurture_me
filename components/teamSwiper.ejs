@@ -1,0 +1,58 @@
+<% const teamSlides = [
+	{ imgSrc:"/assets/images/index/karlo-tottoc-ybZ5hRxaWS4-unsplash.jpg",
+		members: "XXX 獸醫",
+		description:
+		"我相信每個毛孩子都應該擁有健康的身體和快樂的生活。作為獸醫，我的職責是確保牠們得到最好的醫療照護，讓牠們能夠健康地成長。"
+	},
+	{ imgSrc:"/assets/images/index/brooke-cagle-Nm70URdtf3c-unsplash.jpg",
+		members: "愛心贊助者",
+		description:
+		"能夠通過贊助來支持這些毛孩子們，是我的榮幸。我深知每一份捐款都能改變牠們的生活，給予牠們更好的未來。"
+	}, 
+	{ imgSrc:"/assets/images/index/gantas-vaiciulenas-9Y8D-Zeb_kY-unsplash.jpg",
+		members: "XXX 動物行為專家",
+		description:
+		"理解毛孩子的行為是我工作的核心。我相信每個毛孩子都有可能成為最好的自己，只要我們給予牠們足夠的愛與引導。"
+	},
+	{ imgSrc:"/assets/images/index/brooke-cagle-Nm70URdtf3c-unsplash.jpg",
+		members: "愛心贊助者",
+		description:
+		"能夠通過贊助來支持這些毛孩子們，是我的榮幸。我深知每一份捐款都能改變牠們的生活，給予牠們更好的未來。"
+	}
+]; %>
+<div class="relative px-[28px] 2xl:container">
+	<div class="teamSwiper relative overflow-x-hidden pb-12 xl:pb-[72px]">
+		<div class="swiper-wrapper">
+			<% teamSlides.forEach(function(slide) { %>
+			<div class="swiper-slide">
+				<img
+					class="mx-auto mb-4 size-40 rounded-full object-cover xl:mb-6 xl:size-[200px]"
+					src="<%= slide.imgSrc %>"
+					alt="members"
+				/>
+				<div class="px-3 xl:px-4">
+					<h6
+						class="mb-3 border-b border-primary-4 pb-3 text-center text-h7 text-primary-1 xl:text-h4"
+					>
+						<%= slide.members %>
+					</h6>
+					<p class="text-fs-6 text-primary-3 xl:text-fs-4">
+						<%= slide.description %>
+					</p>
+				</div>
+			</div>
+			<% }); %>
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination !bottom-0 py-1 xl:py-2"></div>
+	</div>
+	<!-- Add Navigation -->
+	<div class="3xl:block hidden">
+		<div
+			class="swiper-button-next !-right-14 !top-[175px] !mt-0 !size-20 bg-[url('/assets/svg/arrow/arrowNext.svg')] bg-cover after:hidden"
+		></div>
+		<div
+			class="swiper-button-prev !-left-14 !top-[175px] !mt-0 !size-20 bg-[url('/assets/svg/arrow/arrowPrev.svg')] bg-cover after:hidden"
+		></div>
+	</div>
+</div>
