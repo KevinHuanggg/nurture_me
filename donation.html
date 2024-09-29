@@ -10,18 +10,18 @@
 		/>
 		
 		<title>donation page</title>
-		<script type="module" crossorigin src="/nurture_me/assets/donation-b1f2c93a.js"></script>
-		<link rel="modulepreload" crossorigin href="/nurture_me/assets/main-326a2c70.js">
-		<link rel="stylesheet" href="/nurture_me/assets/main-5d5068c1.css">
+		<script type="module" crossorigin src="/nurture_me/assets/donation-13a90e98.js"></script>
+		<link rel="modulepreload" crossorigin href="/nurture_me/assets/main-f31bb963.js">
+		<link rel="stylesheet" href="/nurture_me/assets/main-e837e60a.css">
 		<link rel="stylesheet" href="/nurture_me/assets/donation-a64ad946.css">
 	</head>
 	<body>
-		<nav>
+		<nav class="left-0 top-0 z-50 w-full xl:fixed" id="navbar">
 	<div
-		class="fixed left-0 top-0 z-50 w-full bg-primary-1 bg-cover bg-no-repeat xl:bg-transparent xl:bg-[url('/assets/svg/wave/wave3.svg')]"
+		class="bg-primary-1 bg-cover bg-no-repeat xl:bg-transparent xl:bg-[url('/assets/svg/wave/wave1.svg')]"
 	>
 		<div
-			class="flex w-full justify-between bg-no-repeat px-3 py-2 xl:container"
+			class="flex w-full justify-between bg-no-repeat px-3 py-2 lg:container"
 		>
 			<h1>
 				<a class="flex h-full items-center" href="index.html">
@@ -74,9 +74,8 @@
 			</div>
 		</div>
 	</div>
-
 	<div
-		class="transition-burger h-0 overflow-hidden bg-primary-1 pt-[60px] xl:hidden"
+		class="transition-burger h-0 overflow-hidden bg-primary-1 xl:hidden"
 		id="hamburgerList"
 	>
 		<ul
@@ -105,30 +104,35 @@
 			class="relative bg-donation_banner bg-cover bg-center before:absolute before:inset-0 before:bg-primary-1 before:opacity-30"
 		>
 			<div
-				class="container relative z-10 pb-[48px] pt-[134px] lg:pb-[160px] lg:pt-[240px]"
+				class="container relative z-10 pb-[48px] pt-[134px] xl:pb-[160px] xl:pt-[240px]"
 			>
-				<h5 class="mb-4 text-h5 text-white lg:mb-2 lg:text-heading">
+				<h5 class="mb-4 text-h5 text-white xl:mb-2 xl:text-heading">
 					感謝您的善舉，
 				</h5>
-				<h5 class="text-h5 text-white lg:text-heading">
+				<h5 class="text-h5 text-white xl:text-heading">
 					每一份捐贈都在為生命譜寫奇蹟
 				</h5>
 			</div>
 			<img
 				src="/nurture_me/assets/donation_wave13-white-70436cc7.svg"
-				class="absolute bottom-0 h-auto w-full lg:hidden"
+				class="absolute bottom-0 z-10 h-auto w-full xl:hidden"
 				alt="波浪裝飾"
 			/>
 			<img
 				src="/nurture_me/assets/donation_wave3-white-d796b7c9.svg"
-				class="absolute bottom-0 hidden h-auto w-full lg:block"
+				class="absolute bottom-0 z-10 hidden h-auto w-full xl:block"
 				alt="波浪裝飾"
 			/>
 		</section>
 
 		<section>
-			<div class="container">
-				<div class="lg:hidden">
+			<div class="container relative">
+				<img
+					src="/nurture_me/assets/donation_footPrint-65a4bdb3.png"
+					alt=""
+					class="absolute left-[-280px] top-[40px] hidden xl:block"
+				/>
+				<div class="xl:hidden">
 					<div class="py-3">
 						<!-- Button -->
 						<button
@@ -162,7 +166,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="hidden lg:block">
+				<div class="relative hidden xl:block">
 					<div class="py-5">
 						<ul class="flex flex-wrap" id="donation_list">
 							<li
@@ -312,29 +316,40 @@
 				</div>
 			</div>
 		</section>
-
-		<main class="container pb-[42px] pt-6">
+		<main class="container relative z-40 pb-[42px] pt-6">
 			<!-- 捐物資區塊內容 -->
 
-			<div id="food_block" class="content-section">
-				<section class="flex justify-center">
+			<div
+				id="food_block"
+				class="content-section relative flex flex-col xl:flex-row-reverse xl:py-[120px]"
+			>
+				<img
+					src="/nurture_me/assets/donation_wave3-white-d796b7c9.svg"
+					alt=""
+					class="absolute top-8 hidden h-auto w-full xl:block"
+				/>
+				<section class="relative flex w-full justify-center">
 					<img
 						src="/nurture_me/assets/donation_warm_sm-86def28b.svg"
 						alt=""
-						class="mb-8 block lg:hidden"
+						class="mb-8 block xl:hidden"
 					/>
 					<img
 						src="/nurture_me/assets/donation_warm-6c97f392.svg"
 						alt=""
-						class="mb-8 hidden lg:block"
+						class="absolute bottom-1 left-6 -z-10 hidden xl:block"
 					/>
 				</section>
-				<section>
+				<section class="flex flex-col items-center xl:items-start">
 					<div class="relative mb-10 flex flex-col items-center">
-						<h4 class="text-h4 text-primary-1">給予毛孩一份溫暖</h4>
-						<div class="relative left-[58px] w-[158px]">
+						<h4 class="text-h4 text-primary-1 xl:text-h1">
+							給予毛孩一份溫暖
+						</h4>
+						<div
+							class="relative left-[58px] w-[158px] lg:left-[130px] lg:w-[274px]"
+						>
 							<img
-								src="/nurture_me/assets/donation_underline-50a220fb.svg"
+								src="/nurture_me/assets/underline-50a220fb.svg"
 								alt="下底線圖片"
 								class="block w-full"
 							/>
@@ -342,7 +357,7 @@
 					</div>
 					<div class="flex flex-col justify-center gap-6">
 						<div
-							class="flex flex-col justify-center gap-3 text-fs-6 text-primary-2"
+							class="flex flex-col justify-center gap-3 text-fs-6 text-primary-2 lg:gap-6 lg:text-fs-4"
 						>
 							<p>我們園區裡，流浪至此的毛孩正等待著您的幫助。</p>
 							<p>
@@ -353,7 +368,7 @@
 							</p>
 						</div>
 						<div
-							class="text-h8 relative flex flex-col gap-3 pl-5 text-secondary-1"
+							class="text-h8 relative flex flex-col gap-3 pl-5 text-secondary-1 lg:text-h6"
 						>
 							<div
 								class="absolute bottom-0 left-0 top-0 w-2 rounded-full bg-highlight"
@@ -387,19 +402,17 @@
 		<img
 			src="/nurture_me/assets/donation_wave14-primary-d85bc675.svg"
 			alt=""
-			class="block h-auto w-full lg:hidden"
+			class="z-40 block h-auto w-full xl:hidden"
 		/>
 		<img
 			src="/nurture_me/assets/donation_wave4-primary-5b510b5b.svg"
 			alt=""
-			class="hidden h-auto w-full lg:block"
+			class="z-40 hidden h-auto w-full xl:block"
 		/>
 
-		<footer
-	class="relative -z-50 overflow-y-hidden bg-primary-1 before:absolute before:-top-[30px] before:h-[30px] before:w-full before:bg-cover before:bg-no-repeat before:xl:bg-[url('/assets/svg/wave/wave4.svg')]"
->
+		<footer class="z-0 mt-auto bg-primary-1">
 	<div
-		class="py-10 after:absolute after:-bottom-[63px] after:right-[86px] after:-z-10 after:h-[339px] after:w-[211px] after:bg-no-repeat xl:py-20 after:xl:bg-[url('/assets/svg/illust/person1.svg')]"
+		class="afterDecoration relative overflow-y-hidden py-10 after:-bottom-[63px] after:right-[86px] after:-z-10 after:h-[339px] after:w-[211px] xl:py-20 after:xl:bg-[url('/assets/svg/illust/person4.svg')]"
 	>
 		<div
 			class="flex flex-col gap-y-10 lg:container lg:flex-row-reverse lg:justify-between"

@@ -5,16 +5,16 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>index</title>
-		<script type="module" crossorigin src="/nurture_me/assets/main-326a2c70.js"></script>
-		<link rel="stylesheet" href="/nurture_me/assets/main-5d5068c1.css">
+		<script type="module" crossorigin src="/nurture_me/assets/main-f31bb963.js"></script>
+		<link rel="stylesheet" href="/nurture_me/assets/main-e837e60a.css">
 	</head>
 	<body>
-		<nav>
+		<nav class="left-0 top-0 z-50 w-full xl:fixed" id="navbar">
 	<div
-		class="fixed left-0 top-0 z-50 w-full bg-primary-1 bg-cover bg-no-repeat xl:bg-transparent xl:bg-[url('/assets/svg/wave/wave3.svg')]"
+		class="bg-primary-1 bg-cover bg-no-repeat xl:bg-transparent xl:bg-[url('/assets/svg/wave/wave1.svg')]"
 	>
 		<div
-			class="flex w-full justify-between bg-no-repeat px-3 py-2 xl:container"
+			class="flex w-full justify-between bg-no-repeat px-3 py-2 lg:container"
 		>
 			<h1>
 				<a class="flex h-full items-center" href="index.html">
@@ -67,9 +67,8 @@
 			</div>
 		</div>
 	</div>
-
 	<div
-		class="transition-burger h-0 overflow-hidden bg-primary-1 pt-[60px] xl:hidden"
+		class="transition-burger h-0 overflow-hidden bg-primary-1 xl:hidden"
 		id="hamburgerList"
 	>
 		<ul
@@ -93,33 +92,387 @@
 		</ul>
 	</div>
 </nav>
-		<main
-			class="flex flex-col justify-center overflow-x-hidden bg-primary-1 py-10 lg:flex-row-reverse lg:justify-between lg:pe-[184px] lg:ps-[272px] lg:pt-[220px]"
-		>
+		<main class="relative bg-primary-1">
 			<div
-				class="relative z-10 mx-auto mb-6 px-[21px] after:absolute after:-top-6 after:left-[29px] after:-z-10 after:h-[396px] after:w-[368px] after:bg-[url('/assets/svg/bgShadow/bgShadow.svg')] after:bg-no-repeat"
+				class="flex flex-col items-center justify-center gap-x-[61px] overflow-x-hidden py-10 md:flex-row-reverse md:px-8 xl:pb-[138px] xl:pt-[272px] 2xl:px-20"
 			>
-				<img
-					class="max-w-[680px]"
-					src="/nurture_me/assets/indexImg-cc520bf5.svg"
-					alt="cat"
-				/>
-			</div>
-			<div class="container">
-				<h2
-					class="flex flex-col gap-y-1 pe-[30px] ps-6 text-h3 text-white"
+				<div
+					class="afterDecoration relative z-10 flex items-center after:-top-6 after:left-2 after:-z-10 after:h-[396px] after:w-[368px] after:bg-[url('/assets/svg/bgShadow/bgShadow.svg')] after:bg-cover md:px-0 2xl:h-[670px] 2xl:w-[680px] after:2xl:-top-8 after:2xl:left-[27px] after:2xl:h-[808px] after:2xl:w-[750px]"
 				>
-					<span>毛孩子們的</span>
-					<span class="self-end">夢想樂園</span>
-				</h2>
+					<img
+						class="h-auto w-full"
+						src="/nurture_me/assets/indexImg-cc520bf5.svg"
+						alt="cat"
+					/>
+				</div>
+				<div class="mt-6 md:mt-0">
+					<h3
+						class="mb-11 flex flex-col items-center gap-y-1 whitespace-nowrap ps-6 text-h3 text-white xl:mb-20 xl:flex-row xl:ps-0 xl:text-[80px] xl:leading-[6rem]"
+					>
+						<span
+							class="beforeDecoration relative me-24 before:-left-[27px] before:-top-[13px] before:h-[34px] before:w-[45px] before:bg-[url('/assets/svg/paw/titlePaw.svg')] before:bg-cover xl:me-0 before:2xl:-left-[82px] before:2xl:-top-[50px] before:2xl:h-[98px] before:2xl:w-32"
+							>毛孩子們的</span
+						>
+						<span
+							class="afterDecoration relative ms-[108px] after:-bottom-5 after:-left-2 after:h-[19px] after:w-[186px] after:bg-[url('/assets/svg/underline/underline.svg')] after:bg-cover xl:ms-0 after:2xl:-bottom-10 after:2xl:-left-11 after:2xl:h-9 after:2xl:w-[380px]"
+							>夢想樂園</span
+						>
+					</h3>
+					<div class="mx-auto max-w-[327px] xl:max-w-[723px]">
+						<div
+							class="beforeDecoration relative mx-auto max-w-[327px] space-y-4 ps-5 font-normal text-white before:left-0 before:h-full before:w-2 before:rounded-2xl before:bg-primary-2 md:mx-0 md:max-w-full xl:ps-10 xl:text-fs-2 before:xl:w-4"
+						>
+							<p>
+								在浪我包養，我們的願景是為每隻毛孩子打造一個充滿愛與關懷的家園。
+							</p>
+							<p>
+								讓每一個毛茸茸的夥伴都能感受到溫暖與快樂，我們相信你的參與可以改變牠們的一生。
+							</p>
+						</div>
+						<div class="mt-6 flex justify-center md:justify-start">
+							<a
+								class="transition-ham rounded-2xl bg-secondary-1 px-6 py-4 text-h7 text-white hover:bg-secondary-2 2xl:px-10 2xl:py-6 2xl:text-h4"
+								href="/pages/donation.html"
+								>立即幫助</a
+							>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
+		<section class="relative z-10 overflow-x-hidden">
+			<div class="absolute left-0 top-0 w-full">
+	<img class="w-full" src="/nurture_me/assets/wave2-820c7df6.svg" alt="wave2" />
+</div>
+			<div
+				class="beforeDecoration afterDecoration relative py-10 before:left-[95px] before:top-[39px] before:-z-10 before:w-[281px] before:bg-contain after:-right-[99px] after:bottom-[190px] after:-z-10 after:h-[270px] after:w-[300px] after:bg-[url('/assets/svg/bgShadow/bgShadow1.svg')] after:bg-contain xl:py-[120px] before:xl:h-[925px] before:xl:bg-[url('/assets/svg/paw/paw1.svg')] after:2xl:-bottom-[220px] after:2xl:-right-[225px] after:2xl:h-[670px] after:2xl:w-[770px]"
+			>
+				<div
+					class="beforeDecoration before:3xl:bg-[url('/assets/svg/illust/person1.svg')] container relative before:-bottom-[90px] before:-right-[208px] before:z-10 before:h-[355px] before:w-[294px]"
+				>
+					<div
+						class="mb-6 space-y-4 text-center text-secondary-1 xl:mb-20 xl:space-y-2"
+					>
+						<h4
+							class="afterDecoration relative text-h4 after:-bottom-1.5 after:left-1/2 after:-z-10 after:h-[18px] after:w-80 after:-translate-x-1/2 after:bg-[url('/assets/svg/underline/underline1.svg')] after:bg-contain xl:text-h1 after:xl:h-[34px] after:xl:w-[620px]"
+						>
+							改變生活，從心開始
+						</h4>
+						<p
+							class="font-bold leading-[1.2rem] tracking-[0.04rem] xl:text-h5"
+						>
+							讓每個人都能參與到保護毛孩子的行動中來是我們的使命
+						</p>
+					</div>
+					<div
+						class="container flex flex-col gap-x-6 gap-y-8 text-center tracking-[0.02rem] text-primary-1 md:flex-row"
+					>
+						<div class="flex flex-1 flex-col items-center">
+							<img
+								class="mb-4 size-40 rounded-full object-cover xl:mb-8 xl:size-[360px]"
+								src="/nurture_me/assets/rupixen-Q59HmzK38eQ-unsplash-171ee56b.jpg"
+								alt=""
+							/>
+							<div class="max-w-[416px] space-y-4 xl:space-y-6">
+								<h5
+									class="afterDecoration relative text-h5 after:bottom-0 after:left-1/2 after:-z-10 after:h-2 after:w-32 after:-translate-x-1/2 after:rounded-2xl after:bg-primary-4 xl:text-h3 after:xl:h-4 after:xl:w-[200px]"
+								>
+									線上贊助
+								</h5>
+								<p class="text-primary-2 xl:text-fs-3">
+									選擇你心儀的毛孩子,每月收到牠們的生活更新和可愛照片，感受到牠們的成長與變化。
+								</p>
+							</div>
+						</div>
+						<div class="flex flex-1 flex-col items-center">
+							<img
+								class="mb-4 size-40 rounded-full object-cover xl:mb-8 xl:size-[360px]"
+								src="/nurture_me/assets/yerlin-matu-GtwiBmtJvaU-unsplash-3a568dd6.jpg"
+								alt=""
+							/>
+							<div class="max-w-[416px] space-y-4 xl:space-y-6">
+								<h5
+									class="afterDecoration relative text-h5 after:bottom-0 after:left-1/2 after:-z-10 after:h-2 after:w-32 after:-translate-x-1/2 after:rounded-2xl after:bg-primary-4 xl:text-h3 after:xl:h-4 after:xl:w-[200px]"
+								>
+									現場互動
+								</h5>
+								<p class="text-primary-2 xl:text-fs-3">
+									與贊助對象零距離互動，給牠們帶來更多的歡樂和陪伴。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-		<footer
-	class="relative -z-50 overflow-y-hidden bg-primary-1 before:absolute before:-top-[30px] before:h-[30px] before:w-full before:bg-cover before:bg-no-repeat before:xl:bg-[url('/assets/svg/wave/wave4.svg')]"
->
+			<div
+				class="beforeDecoration afterDecoration relative overflow-hidden py-10 before:-left-[126px] before:bottom-[238px] before:-z-10 before:h-80 before:w-[340px] before:bg-[url('/assets/svg/bgShadow/bgShadow2.svg')] before:bg-contain after:-top-[7px] after:right-[143px] after:bg-contain xl:py-[120px] before:xl:-left-[307px] before:xl:top-[486px] before:xl:h-[742px] before:xl:w-[788px] after:xl:h-[825px] after:xl:w-[1157px] after:xl:bg-[url('/assets/svg/paw/paw2.svg')]"
+			>
+				<div
+					class="mb-6 space-y-4 text-center text-secondary-2 xl:mb-16"
+				>
+					<h4
+						class="afterDecoration relative text-h4 after:-bottom-1.5 after:left-1/2 after:-z-10 after:h-[18px] after:w-[186px] after:-translate-x-1/2 after:bg-[url('/assets/svg/underline/underline2.svg')] after:bg-contain xl:text-h1 after:xl:h-[35px] after:xl:w-[349px]"
+					>
+						我們的團隊
+					</h4>
+					<p
+						class="font-bold leading-[1.2rem] tracking-[0.04rem] xl:text-h5"
+					>
+						致力於為毛孩子們提供最好的照顧和無限的愛
+					</p>
+				</div>
+				<div
+					class="before:3xl:bg-[url('/assets/svg/illust/person2.svg')] relative before:absolute before:-bottom-[116px] before:left-[66px] before:-z-10 before:h-[353px] before:w-[246px]"
+				>
+					<div
+						class="mx-[28px] flex justify-center xl:container xl:block"
+					>
+						<p
+							class="beforeDecoration relative mb-10 ps-4 text-primary-2 before:absolute before:left-0 before:h-full before:w-2 before:rounded-2xl before:bg-primary-4 xl:mb-12 xl:ps-[30px] xl:text-fs-3 before:xl:w-4"
+						>
+							浪我包養的團隊是一群充滿熱情的動物愛好者，<br
+								class="hidden sm:block"
+							/>
+							包括專業的獸醫、動物行為專家、熱心志工和愛心贊助者。
+						</p>
+					</div>
+					
+<div class="relative px-[28px] 2xl:container">
+	<div class="teamSwiper relative overflow-x-hidden pb-12 xl:pb-[72px]">
+		<div class="swiper-wrapper">
+			
+			<div class="swiper-slide">
+				<img
+					class="mx-auto mb-4 size-40 rounded-full object-cover xl:mb-6 xl:size-[200px]"
+					src="/nurture_me/assets/karlo-tottoc-ybZ5hRxaWS4-unsplash-3a09fa30.jpg"
+					alt="members"
+				/>
+				<div class="px-3 xl:px-4">
+					<h6
+						class="mb-3 border-b border-primary-4 pb-3 text-center text-h7 text-primary-1 xl:text-h4"
+					>
+						XXX 獸醫
+					</h6>
+					<p class="text-fs-6 text-primary-3 xl:text-fs-4">
+						我相信每個毛孩子都應該擁有健康的身體和快樂的生活。作為獸醫，我的職責是確保牠們得到最好的醫療照護，讓牠們能夠健康地成長。
+					</p>
+				</div>
+			</div>
+			
+			<div class="swiper-slide">
+				<img
+					class="mx-auto mb-4 size-40 rounded-full object-cover xl:mb-6 xl:size-[200px]"
+					src="/nurture_me/assets/brooke-cagle-Nm70URdtf3c-unsplash-675f75a8.jpg"
+					alt="members"
+				/>
+				<div class="px-3 xl:px-4">
+					<h6
+						class="mb-3 border-b border-primary-4 pb-3 text-center text-h7 text-primary-1 xl:text-h4"
+					>
+						愛心贊助者
+					</h6>
+					<p class="text-fs-6 text-primary-3 xl:text-fs-4">
+						能夠通過贊助來支持這些毛孩子們，是我的榮幸。我深知每一份捐款都能改變牠們的生活，給予牠們更好的未來。
+					</p>
+				</div>
+			</div>
+			
+			<div class="swiper-slide">
+				<img
+					class="mx-auto mb-4 size-40 rounded-full object-cover xl:mb-6 xl:size-[200px]"
+					src="/nurture_me/assets/gantas-vaiciulenas-9Y8D-Zeb_kY-unsplash-afe25b41.jpg"
+					alt="members"
+				/>
+				<div class="px-3 xl:px-4">
+					<h6
+						class="mb-3 border-b border-primary-4 pb-3 text-center text-h7 text-primary-1 xl:text-h4"
+					>
+						XXX 動物行為專家
+					</h6>
+					<p class="text-fs-6 text-primary-3 xl:text-fs-4">
+						理解毛孩子的行為是我工作的核心。我相信每個毛孩子都有可能成為最好的自己，只要我們給予牠們足夠的愛與引導。
+					</p>
+				</div>
+			</div>
+			
+			<div class="swiper-slide">
+				<img
+					class="mx-auto mb-4 size-40 rounded-full object-cover xl:mb-6 xl:size-[200px]"
+					src="/nurture_me/assets/brooke-cagle-Nm70URdtf3c-unsplash-675f75a8.jpg"
+					alt="members"
+				/>
+				<div class="px-3 xl:px-4">
+					<h6
+						class="mb-3 border-b border-primary-4 pb-3 text-center text-h7 text-primary-1 xl:text-h4"
+					>
+						愛心贊助者
+					</h6>
+					<p class="text-fs-6 text-primary-3 xl:text-fs-4">
+						能夠通過贊助來支持這些毛孩子們，是我的榮幸。我深知每一份捐款都能改變牠們的生活，給予牠們更好的未來。
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination !bottom-0 py-1 xl:py-2"></div>
+	</div>
+	<!-- Add Navigation -->
+	<div class="3xl:block hidden">
+		<div
+			class="swiper-button-next !-right-14 !top-[175px] !mt-0 !size-20 bg-[url('/assets/svg/arrow/arrowNext.svg')] bg-cover after:hidden"
+		></div>
+		<div
+			class="swiper-button-prev !-left-14 !top-[175px] !mt-0 !size-20 bg-[url('/assets/svg/arrow/arrowPrev.svg')] bg-cover after:hidden"
+		></div>
+	</div>
+</div>
+				</div>
+				<div class="absolute bottom-0 left-0 w-full">
+					<img
+						class="w-full"
+						src="/nurture_me/assets/wave3-6228ef4e.svg"
+						alt="wave2"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<article
+			class="afterDecoration after:3xl:bg-[url('/assets/svg/illust/person3.svg')] relative space-y-8 bg-primary-1 pb-10 pt-20 after:bottom-[91px] after:right-[78px] after:h-[326px] after:w-[356px] xl:space-y-16 xl:py-20"
+		>
+			<div class="text-center text-white">
+				<h4 class="text-h4 xl:text-h2">夢想起飛的旅程</h4>
+				<p
+					class="font-bold leading-[1.2rem] tracking-[0.04rem] xl:text-h4"
+				>
+					浪我包養的故事從一個簡單的夢想開始...
+				</p>
+			</div>
+			
+
+<div class="container">
+	<div class="relative border-t border-primary-3 px-[10.5px] pt-4 xl:pt-12">
+		<div class="storySwiper relative overflow-x-hidden pb-12 2xl:pb-0">
+			<div class="swiper-wrapper">
+				
+				<div class="swiper-slide px-3">
+					<img
+						class="mx-auto mb-6 size-[306px] rounded-xl object-cover xl:size-[282px]"
+						src="/nurture_me/assets/dylan-gillis-KdeqA3aTnBY-unsplash-38567969.jpg"
+						alt="storyCover"
+					/>
+					<div>
+						<h6 class="pb-2 text-h7 text-white xl:pb-6 xl:text-h5">
+							2022.5
+						</h6>
+						<p class="text-fs-6 text-primary-4">
+							一群熱愛動物的朋友，經常聚在一起分享對流浪貓狗的憂心與愛心。我們決定要為這些可愛的生命做點什麼，不再僅僅是同情，而是付諸行動。
+						</p>
+					</div>
+				</div>
+				
+				<div class="swiper-slide px-3">
+					<img
+						class="mx-auto mb-6 size-[306px] rounded-xl object-cover xl:size-[282px]"
+						src="/nurture_me/assets/12photostory-BLaXAI922FI-unsplash-bc42236c.jpg"
+						alt="storyCover"
+					/>
+					<div>
+						<h6 class="pb-2 text-h7 text-white xl:pb-6 xl:text-h5">
+							2022.12
+						</h6>
+						<p class="text-fs-6 text-primary-4">
+							開始的日子並不容易，我們租了一個小倉庫作為臨時的收容所，日夜照顧流浪貓狗。資金緊缺、人手不足，但我們的熱情和決心從未減少。
+						</p>
+					</div>
+				</div>
+				
+				<div class="swiper-slide px-3">
+					<img
+						class="mx-auto mb-6 size-[306px] rounded-xl object-cover xl:size-[282px]"
+						src="/nurture_me/assets/bayu-prayuda-4ZVqqDAZD2o-unsplash-4022d881.jpg"
+						alt="storyCover"
+					/>
+					<div>
+						<h6 class="pb-2 text-h7 text-white xl:pb-6 xl:text-h5">
+							2023.3
+						</h6>
+						<p class="text-fs-6 text-primary-4">
+							隨著時間的推移，浪我包養逐漸受到越來越多人的關注和支持。更多的志工加入了他們的行列，專業的獸醫和動物行為專家也主動提供幫助。
+						</p>
+					</div>
+				</div>
+				
+				<div class="swiper-slide px-3">
+					<img
+						class="mx-auto mb-6 size-[306px] rounded-xl object-cover xl:size-[282px]"
+						src="/nurture_me/assets/sergey-zolkin-_UeY8aTI6d0-unsplash-794583a3.jpg"
+						alt="storyCover"
+					/>
+					<div>
+						<h6 class="pb-2 text-h7 text-white xl:pb-6 xl:text-h5">
+							2024.1
+						</h6>
+						<p class="text-fs-6 text-primary-4">
+							線上贊助平台的開設，讓更多無法親自來到現場的人也能參與其中，支持這些毛孩子們。
+						</p>
+					</div>
+				</div>
+				
+				<div class="swiper-slide px-3">
+					<img
+						class="mx-auto mb-6 size-[306px] rounded-xl object-cover xl:size-[282px]"
+						src="/nurture_me/assets/12photostory-BLaXAI922FI-unsplash-bc42236c.jpg"
+						alt="storyCover"
+					/>
+					<div>
+						<h6 class="pb-2 text-h7 text-white xl:pb-6 xl:text-h5">
+							2022.12
+						</h6>
+						<p class="text-fs-6 text-primary-4">
+							開始的日子並不容易，我們租了一個小倉庫作為臨時的收容所，日夜照顧流浪貓狗。資金緊缺、人手不足，但我們的熱情和決心從未減少。
+						</p>
+					</div>
+				</div>
+				
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination !bottom-0 py-1 2xl:hidden"></div>
+		</div>		
+	</div>
+</div>
+			<div class="hidden items-center justify-center 2xl:flex">
+				<a
+					class="inline-block rounded-2xl bg-white px-6 py-4 text-h7 text-primary-2 xl:px-10 xl:py-6 xl:text-h4"
+					href="#"
+					>更多創辦故事</a
+				>
+			</div>
+		</article>
+
+		<section class="relative">
+			<div class="absolute left-0 top-0 w-full">
+	<img class="w-full" src="/nurture_me/assets/wave2-820c7df6.svg" alt="wave2" />
+</div>
+			<div
+				class="afterDecoration beforeDecoration relative space-y-2 pb-[359px] pt-10 text-center text-primary-1 before:-top-[66px] before:left-1/2 before:-z-10 before:h-[358px] before:w-[120px] before:-translate-x-1/2 before:bg-[url('/assets/svg/guardianHeroes/hands.svg')] before:bg-contain after:bottom-0 after:left-1/2 after:-z-10 after:h-[88px] after:w-[346px] after:-translate-x-1/2 after:bg-[url('/assets/svg/guardianHeroes/catPaws.svg')] after:bg-contain after:xl:h-[165px] after:xl:w-[656px] 2xl:space-y-6 2xl:pb-[781px] 2xl:pt-20 before:2xl:-top-[140px] before:2xl:h-[716px] before:2xl:w-[240px] after:2xl:h-[330px] after:2xl:w-[1312px]"
+			>
+				<h4 class="text-h4 2xl:text-h1">成為毛孩子的守護英雄</h4>
+				<p
+					class="leading-[1.2rem ] font-bold tracking-[0.04rem] 2xl:text-h4"
+				>
+					想要成為毛孩子的守護英雄嗎？
+				</p>
+			</div>
+			<div class="absolute bottom-0 left-0 w-full">
+	<img class="w-full" src="/nurture_me/assets/wave4-48be5963.svg" alt="wave4" />
+</div>
+		</section>
+		<footer class="z-0 mt-auto bg-primary-1">
 	<div
-		class="py-10 after:absolute after:-bottom-[63px] after:right-[86px] after:-z-10 after:h-[339px] after:w-[211px] after:bg-no-repeat xl:py-20 after:xl:bg-[url('/assets/svg/illust/person1.svg')]"
+		class="afterDecoration relative overflow-y-hidden py-10 after:-bottom-[63px] after:right-[86px] after:-z-10 after:h-[339px] after:w-[211px] xl:py-20 after:xl:bg-[url('/assets/svg/illust/person4.svg')]"
 	>
 		<div
 			class="flex flex-col gap-y-10 lg:container lg:flex-row-reverse lg:justify-between"
@@ -198,7 +551,6 @@
 		</p>
 	</div>
 </footer>
-
 		
 	</body>
 </html>
