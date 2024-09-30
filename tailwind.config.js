@@ -149,6 +149,7 @@ export default {
 				highlight: {
 					DEFAULT: "#FFEE75",
 				},
+				
 			},
 
 			backgroundImage: {
