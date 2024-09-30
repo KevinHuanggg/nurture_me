@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	const buttons = document.querySelectorAll("#dropdown-menu button");
 	const sections = document.querySelectorAll(".content-section");
 
+	// 用於追蹤當前顯示的區塊
+	let currentSection = "food_block";
+
 	// 下拉選單初始設置
 	dropdownMenu.style.display = "none";
 	menuButton.addEventListener("click", function () {
@@ -40,43 +43,51 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
-	// 預設第一個捐贈項目 active
-	links[0].parentElement.classList.add("active");
+	// 更新顯示區塊
+	function showSection(sectionId) {
+		sections.forEach(section => section.classList.add("hidden"));
+		document.getElementById(sectionId).classList.remove("hidden");
+	}
 
-	// 點擊切換捐贈項目效果
-	links.forEach(link => {
-		link.addEventListener("click", function (event) {
-			event.preventDefault();
+	// 更新選單按鈕文字
+	function updateMenuButtonText(sectionId) {
+		const selectedButton = Array.from(buttons).find(
+			button => button.getAttribute("data-target") === sectionId
+		);
+		if (selectedButton) {
+			menuButton.querySelector("p").textContent =
+				selectedButton.textContent;
+		}
+	}
 
-			// 移除所有項目的 active 樣式
-			links.forEach(a => {
-				a.parentElement.classList.remove("active");
-				const h2 = a.querySelector("h2");
-				if (h2) {
-					h2.classList.add("opacity-70");
-				}
-			});
-
-			// 為當前點擊的項目添加 active 樣式
-			this.parentElement.classList.add("active");
-			const h2 = this.querySelector("h2");
+	// 更新桌機版 active 樣式
+	function updateDesktopActive(sectionId) {
+		links.forEach(a => {
+			a.parentElement.classList.remove("active");
+			const h2 = a.querySelector("h2");
 			if (h2) {
-				h2.classList.remove("opacity-70");
+				h2.classList.add("opacity-70");
+			}
+			if (a.parentElement.getAttribute("data-target") === sectionId) {
+				a.parentElement.classList.add("active");
+				if (h2) {
+					h2.classList.remove("opacity-70");
+				}
 			}
 		});
-	});
+	}
+
+	// 預設第一個捐贈項目 active
+	links[0].parentElement.classList.add("active");
 
 	// 手機板切換對應區塊功能
 	buttons.forEach(button => {
 		button.addEventListener("click", function () {
-			// 1. 隱藏所有區塊
-			sections.forEach(section => section.classList.add("hidden"));
+			// 更新區塊顯示
+			currentSection = this.getAttribute("data-target");
+			showSection(currentSection);
 
-			// 2. 顯示當前點擊的區塊
-			const target = this.getAttribute("data-target");
-			document.getElementById(target).classList.remove("hidden");
-
-			// 3. 隱藏下拉選單
+			// 隱藏下拉選單
 			dropdownMenu.style.opacity = "0";
 			dropdownMenu.style.transform = "scale(0.95)";
 			setTimeout(() => {
@@ -84,19 +95,27 @@ document.addEventListener("DOMContentLoaded", function () {
 			}, 300);
 
 			// 更新按鈕文字為所選的選項
-			menuButton.querySelector("p").textContent = this.textContent;
+			updateMenuButtonText(currentSection);
+
+			// 同步桌機版 active 樣式
+			updateDesktopActive(currentSection);
 		});
 	});
 
 	// 桌機板切換對應區塊功能
 	links.forEach(link => {
-		link.addEventListener("click", function () {
-			// 1. 先隱藏所有區塊
-			sections.forEach(section => section.classList.add("hidden"));
+		link.addEventListener("click", function (event) {
+			event.preventDefault();
 
-			// 2. 再顯示當前點擊項目對應的區塊
-			const target = this.getAttribute("data-target");
-			document.getElementById(target).classList.remove("hidden");
+			// 更新區塊顯示
+			currentSection = this.parentElement.getAttribute("data-target");
+			showSection(currentSection);
+
+			// 同步桌機版 active 樣式
+			updateDesktopActive(currentSection);
+
+			// 更新選單按鈕文字同步手機版
+			updateMenuButtonText(currentSection);
 		});
 	});
 });
