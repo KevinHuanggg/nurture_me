@@ -15,26 +15,26 @@
 		<%- include('./layout/header'); -%>
 
 		<section
-			class="relative bg-center bg-cover bg-donation_banner before:absolute before:inset-0 before:bg-primary-1 before:opacity-30"
+			class="relative bg-donation_banner bg-cover bg-center before:absolute before:inset-0 before:bg-primary-1 before:opacity-30"
 		>
 			<div
 				class="container relative z-10 pb-[48px] pt-[134px] xl:pb-[160px] xl:pt-[240px]"
 			>
-				<h5 class="mb-4 text-white text-h5 xl:mb-2 xl:text-heading">
+				<h5 class="mb-4 text-h5 text-white xl:mb-2 xl:text-heading">
 					感謝您的善舉，
 				</h5>
-				<h5 class="text-white text-h5 xl:text-heading">
+				<h5 class="text-h5 text-white xl:text-heading">
 					每一份捐贈都在為生命譜寫奇蹟
 				</h5>
 			</div>
 			<img
 				src="/assets/images/donation/donation_wave13-white.svg"
-				class="absolute bottom-0 z-10 w-full h-auto xl:hidden"
+				class="absolute bottom-0 z-10 h-auto w-full xl:hidden"
 				alt="波浪裝飾"
 			/>
 			<img
 				src="/assets/images/donation/donation_wave3-white.svg"
-				class="absolute bottom-0 z-10 hidden w-full h-auto xl:block"
+				class="absolute bottom-0 z-10 hidden h-auto w-full xl:block"
 				alt="波浪裝飾"
 			/>
 		</section>
@@ -84,12 +84,12 @@
 					<div class="py-5">
 						<ul class="flex flex-wrap" id="donation_list">
 							<li
-								class="relative w-1/4 px-6 active"
+								class="active relative w-1/4 px-6"
 								data-target="food_block"
 							>
 								<a>
 									<h2
-										class="absolute inset-0 z-20 flex items-center justify-center text-white text-h2"
+										class="absolute inset-0 z-20 flex items-center justify-center text-h2 text-white"
 									>
 										捐物資
 									</h2>
@@ -111,7 +111,7 @@
 							>
 								<a>
 									<h2
-										class="absolute inset-0 z-20 flex items-center justify-center text-white text-h2 opacity-70"
+										class="absolute inset-0 z-20 flex items-center justify-center text-h2 text-white opacity-70"
 									>
 										捐款
 									</h2>
@@ -133,7 +133,7 @@
 							>
 								<a>
 									<h2
-										class="absolute inset-0 z-20 flex items-center justify-center text-white text-h2 opacity-70"
+										class="absolute inset-0 z-20 flex items-center justify-center text-h2 text-white opacity-70"
 									>
 										義賣
 									</h2>
@@ -155,7 +155,7 @@
 							>
 								<a>
 									<h2
-										class="absolute inset-0 z-20 flex items-center justify-center text-white text-h2 opacity-70"
+										class="absolute inset-0 z-20 flex items-center justify-center text-h2 text-white opacity-70"
 									>
 										線上<br />認養
 									</h2>
@@ -177,7 +177,7 @@
 
 				<!-- Dropdown Menu -->
 				<div
-					class="absolute z-10 w-56 mt-1 transition-all duration-300 ease-in-out origin-top-right transform scale-95 bg-white rounded-md shadow-xl opacity-0 right-6 ring-1 ring-black ring-opacity-5 focus:outline-none"
+					class="absolute right-6 z-[45] mt-1 w-56 origin-top-right scale-95 transform rounded-md bg-white opacity-0 shadow-xl ring-1 ring-black ring-opacity-5 transition-all duration-300 ease-in-out focus:outline-none"
 					role="menu"
 					aria-orientation="vertical"
 					aria-labelledby="menu-button"
@@ -188,7 +188,7 @@
 						<!-- Menu items with hover effect -->
 						<button
 							type="button"
-							class="block w-full px-4 py-2 text-sm transition-colors duration-200 text-primary-3 hover:bg-gray-100"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
 							role="menuitem"
 							tabindex="-1"
 							id="menu-item-0"
@@ -198,7 +198,7 @@
 						</button>
 						<button
 							type="button"
-							class="block w-full px-4 py-2 text-sm transition-colors duration-200 text-primary-3 hover:bg-gray-100"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
 							role="menuitem"
 							tabindex="-1"
 							id="menu-item-1"
@@ -208,7 +208,7 @@
 						</button>
 						<button
 							type="button"
-							class="block w-full px-4 py-2 text-sm transition-colors duration-200 text-primary-3 hover:bg-gray-100"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
 							role="menuitem"
 							tabindex="-1"
 							id="menu-item-2"
@@ -218,7 +218,7 @@
 						</button>
 						<button
 							type="submit"
-							class="block w-full px-4 py-2 text-sm transition-colors duration-200 text-primary-3 hover:bg-gray-100"
+							class="block w-full px-4 py-2 text-sm text-primary-3 transition-colors duration-200 hover:bg-gray-100"
 							role="menuitem"
 							tabindex="-1"
 							id="menu-item-3"
@@ -240,22 +240,22 @@
 				<img
 					src="../assets/images/donation/donation_wave3-white.svg"
 					alt=""
-					class="absolute hidden w-full h-auto top-8 xl:block"
+					class="absolute top-8 hidden h-auto w-full xl:block"
 				/>
-				<section class="relative flex justify-center w-full">
+				<section class="relative flex w-full justify-center">
 					<img
 						src="../assets/images/donation/donation_warm_sm.svg"
 						alt=""
-						class="block mb-8 xl:hidden"
+						class="mb-8 block xl:hidden"
 					/>
 					<img
 						src="../assets/images/donation/donation_warm.svg"
 						alt=""
-						class="absolute hidden scale-110 right-[60px] -bottom-6 -z-10 translate-x-1/4 xl:block"
+						class="absolute -bottom-6 right-[60px] -z-10 hidden translate-x-1/4 scale-110 xl:block"
 					/>
 				</section>
 				<section class="flex flex-col items-center xl:items-start">
-					<div class="relative flex flex-col items-center mb-10">
+					<div class="relative mb-10 flex flex-col items-center">
 						<h4 class="text-h4 text-primary-1 xl:text-h1">
 							給予毛孩一份溫暖
 						</h4>
@@ -285,7 +285,7 @@
 							class="relative flex flex-col gap-3 pl-5 text-h8 text-secondary-1 lg:text-h6"
 						>
 							<div
-								class="absolute top-0 bottom-0 left-0 w-2 rounded-full bg-highlight"
+								class="absolute bottom-0 left-0 top-0 w-2 rounded-full bg-highlight"
 							></div>
 							<p>郵寄地址：快樂市寵物區幸福路 555 號</p>
 							<p>電話：04-12340000</p>
@@ -297,31 +297,31 @@
 
 			<!-- 捐款區塊內容 -->
 
-			<div id="donate_block" class="hidden content-section">
+			<div id="donate_block" class="content-section hidden">
 				捐款的內容
 			</div>
 
 			<!-- 義賣區塊內容 -->
 
-			<div id="store_block" class="hidden content-section">
+			<div id="store_block" class="content-section hidden">
 				義賣的內容
 			</div>
 
 			<!-- 線上認養區塊內容 -->
 
-			<div id="adopt_block" class="hidden content-section">
+			<div id="adopt_block" class="content-section hidden">
 				線上認養的內容
 			</div>
 		</main>
 		<img
 			src="../assets/images/donation/donation_wave14-primary.svg"
 			alt=""
-			class="z-40 block w-full h-auto xl:hidden"
+			class="z-40 block h-auto w-full xl:hidden"
 		/>
 		<img
 			src="../assets/images/donation/donation_wave4-primary.svg"
 			alt=""
-			class="z-40 hidden w-full h-auto xl:block"
+			class="z-40 hidden h-auto w-full xl:block"
 		/>
 
 		<%- include('./layout/footer'); -%>

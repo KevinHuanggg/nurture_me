@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const menuButton = document.getElementById("menu-button");
 	const dropdownMenu = document.getElementById("dropdown-menu");
 	const links = document.querySelectorAll("#donation_list li a");
+	const buttons = document.querySelectorAll("#dropdown-menu button");
+	const sections = document.querySelectorAll(".content-section");
 
 	// 下拉選單初始設置
 	dropdownMenu.style.display = "none";
@@ -63,38 +65,36 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 	});
-});
 
-//手機板切換對應區塊功能
-
-document.addEventListener("DOMContentLoaded", function () {
-	const buttons = document.querySelectorAll("#dropdown-menu button");
-	const sections = document.querySelectorAll(".content-section");
-
+	// 手機板切換對應區塊功能
 	buttons.forEach(button => {
 		button.addEventListener("click", function () {
-			// 1.先隱藏所有區塊
+			// 1. 隱藏所有區塊
 			sections.forEach(section => section.classList.add("hidden"));
 
-			// 2.再顯示當前點擊項目對應的區塊
+			// 2. 顯示當前點擊的區塊
 			const target = this.getAttribute("data-target");
 			document.getElementById(target).classList.remove("hidden");
+
+			// 3. 隱藏下拉選單
+			dropdownMenu.style.opacity = "0";
+			dropdownMenu.style.transform = "scale(0.95)";
+			setTimeout(() => {
+				dropdownMenu.style.display = "none";
+			}, 300);
+
+			// 更新按鈕文字為所選的選項
+			menuButton.querySelector("p").textContent = this.textContent;
 		});
 	});
-});
 
-//桌機板切換對應區塊功能
-
-document.addEventListener("DOMContentLoaded", function () {
-	const links = document.querySelectorAll("#donation_list li");
-	const sections = document.querySelectorAll(".content-section");
-
+	// 桌機板切換對應區塊功能
 	links.forEach(link => {
 		link.addEventListener("click", function () {
-			// 1.先隱藏所有區塊
+			// 1. 先隱藏所有區塊
 			sections.forEach(section => section.classList.add("hidden"));
 
-			// 2.再顯示當前點擊項目對應的區塊
+			// 2. 再顯示當前點擊項目對應的區塊
 			const target = this.getAttribute("data-target");
 			document.getElementById(target).classList.remove("hidden");
 		});
