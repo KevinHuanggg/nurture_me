@@ -5,15 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>最新消息</title>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+ 
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
     <!--banner swiper-->
-    <h1 class="h-[720px] p-[100px]">這是swiper</h1>
+    
+    <section class="swiper mySwiper h-[720px] relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bg-news_banner bg-cover bg-center  relative flex flex-col xl:justify-center 2xl:pt-[226px] 2xl:justify-start">
+          <div class="absolute inset-0 bg-primary-1 bg-opacity-30"></div>
+          <div class="container z-10 grid grid-cols-12 gap-6 ">
+            <div class="col-span-8 z-10">
+              <p class="text-h3 text-white mb-4">2024年8月6日</p>
+              <h2 class="text-white text-h1 mb-8">關於即將舉行的「流浪動物愛心日」活動</h2>
+              <p class="text-fs-3 text-white">我們將於2024年8月15日在市中心公園舉行「流浪動物愛心日」活動。這次活動旨在提高公眾對流浪動物的關注...</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-slide bg-news_banner2 bg-cover bg-center  relative flex flex-col xl:justify-center 2xl:pt-[226px] 2xl:justify-start">
+          <div class="absolute inset-0 bg-primary-1 bg-opacity-30"></div>
+            <div class="container z-10 grid grid-cols-12 gap-6 ">
+              <div class="col-span-8 z-10">
+                <p class="text-h3 text-white mb-4">2024年9月10日</p>
+                <h2 class="text-white text-h1 mb-8">「愛心動物日」籌款活動</h2>
+                <p class="text-fs-3 text-white">我們將於2024年9月20日在市立動物收容所舉行「愛心動物日」籌款活動。此次活動旨在籌集資金，幫助流浪動物獲得醫療照顧和安置...</p>
+              </div>
+          </div>
+        </div>
+        <div class="swiper-slide bg-news_banner3 bg-cover bg-center  relative flex flex-col xl:justify-center 2xl:pt-[226px] 2xl:justify-start">
+          <div class="absolute inset-0 bg-primary-1 bg-opacity-30"></div>
+            <div class="container z-10 grid grid-cols-12 gap-4">
+              <div class="col-span-8 z-10">
+                <p class="2xl:text-h3 text-white mb-4">2024年10月5日</p>
+                <h2 class="2xl:text-white text-h1 mb-8">「一起關心流浪動物」志願者招募活動</h2>
+                <p class="2xl:text-fs-3 text-white">我們將於2024年10月15日在社區中心舉行「一起關心流浪動物」志願者招募活動。活動將介紹如何參與流浪動物救助，並提供志願服務的培訓...</p>
+              </div>
+          </div>
+        </div> 
+      </div>
+
+        <!-- 如果需要導航按鈕 推margin的部分再想一下-->
+      
+        <div class="swiper-button-next after:!content-none bg-white rounded-full !size-[80px] p-4 bg-opacity-50 absolute !right-[10%] hidden 2xl:block">
+          <!-- 新增自訂的箭頭圖示 -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5303 11.4697C21.8232 11.7626 21.8232 12.2374 21.5303 12.5303L13.0303 21.0303C12.7374 21.3232 12.2626 21.3232 11.9697 21.0303C11.6768 20.7374 11.6768 20.2626 11.9697 19.9697L19.1893 12.75L3 12.75C2.58579 12.75 2.25 12.4142 2.25 12C2.25 11.5858 2.58579 11.25 3 11.25L19.1893 11.25L11.9697 4.03033C11.6768 3.73744 11.6768 3.26256 11.9697 2.96967C12.2626 2.67678 12.7374 2.67678 13.0303 2.96967L21.5303 11.4697Z" fill="#7782B8"/>
+            </svg>
+            
+            
+        </div>
+        
+        <div class="swiper-button-prev after:!content-none bg-white rounded-full !size-[80px] p-4 bg-opacity-50 absolute !left-[10%] hidden 2xl:block" >
+          <!-- 新增自訂的箭頭圖示 -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.46967 12.5303C2.17678 12.2374 2.17678 11.7626 2.46967 11.4697L10.9697 2.96967C11.2626 2.67678 11.7374 2.67678 12.0303 2.96967C12.3232 3.26256 12.3232 3.73744 12.0303 4.03033L4.81066 11.25L21 11.25C21.4142 11.25 21.75 11.5858 21.75 12C21.75 12.4142 21.4142 12.75 21 12.75L4.81066 12.75L12.0303 19.9697C12.3232 20.2626 12.3232 20.7374 12.0303 21.0303C11.7374 21.3232 11.2626 21.3232 10.9697 21.0303L2.46967 12.5303Z" fill="#7782B8"/>
+            </svg>
+            
+        </div>
+
+        <!-- 如果需要分頁器 -->
+        <div class="swiper-pagination mb-16">
+        </div>
+        
+        <%- include('./components/news_wave2'); -%>
+    </section>
+
 
     <!--資訊欄 跑馬燈-->
     <section class="bg-primary-4 h-[120px] px-[120px] py-[20px]">
@@ -153,7 +212,7 @@
 
     
     <script type="module" src="../main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
   </body>
 </html>

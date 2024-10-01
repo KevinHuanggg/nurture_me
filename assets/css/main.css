@@ -10,10 +10,9 @@
 	}
 
 	body {
-		@apply flex min-h-screen flex-col;
+		@apply min-h-screen;
 	}
 }
-
 @layer components {
 	/* navbarList */
 	.decorated-link {
