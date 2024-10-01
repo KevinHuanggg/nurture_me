@@ -230,12 +230,12 @@
 				</div>
 			</div>
 		</section>
-		<main class="container relative z-40 pb-[48px] pt-6">
+		<main class="container relative z-40">
 			<!-- 捐物資區塊內容 -->
 
 			<div
 				id="food_block"
-				class="content-section relative flex flex-col xl:flex-row-reverse xl:py-[120px]"
+				class="content-section relative flex flex-col pb-[48px] pt-6 xl:flex-row-reverse xl:py-[120px]"
 			>
 				<img
 					src="../assets/images/donation/donation_wave3-white.svg"
@@ -260,7 +260,7 @@
 							給予毛孩一份溫暖
 						</h4>
 						<div
-							class="relative left-[58px] w-[158px] lg:left-[130px] lg:w-[274px]"
+							class="relative left-[58px] w-[158px] xl:left-[130px] xl:w-[274px]"
 						>
 							<img
 								src="../assets/images/donation/donation_underline.svg"
@@ -271,7 +271,7 @@
 					</div>
 					<div class="flex flex-col justify-center gap-6">
 						<div
-							class="flex flex-col justify-center gap-3 text-fs-6 text-primary-2 lg:gap-6 lg:text-fs-4"
+							class="flex flex-col justify-center gap-3 text-fs-6 text-primary-2 xl:gap-6 xl:text-fs-4"
 						>
 							<p>我們園區裡，流浪至此的毛孩正等待著您的幫助。</p>
 							<p>
@@ -282,7 +282,7 @@
 							</p>
 						</div>
 						<div
-							class="relative flex flex-col gap-3 pl-5 text-h8 text-secondary-1 lg:text-h6"
+							class="relative flex flex-col gap-3 pl-5 text-h8 text-secondary-1 xl:text-h6"
 						>
 							<div
 								class="absolute top-0 bottom-0 left-0 w-2 rounded-full bg-highlight"
@@ -297,68 +297,89 @@
 
 			<!-- 捐款區塊內容 -->
 
-			<div id="donate_block" class="hidden content-section">
-				<div class="mb-[23px] flex flex-col items-center">
-					<h4 class="text-h4 text-primary-1">捐款流程</h4>
-					<img
-						src="../assets/images/donation/donation_underline.svg"
-						alt="下底線圖片"
-						class="block h-auto w-[158px]"
-					/>
-				</div>
-
-				<div>
-					<div
-						class="flex flex-col gap-3 mb-6 text-fs-6 text-primary-2"
-					>
-						<p>簡單幾步，就能為園區的貓狗帶來溫暖與希望。</p>
-						<p>
-							無論金額大小，您的捐款都將成為牠們的食物、醫療與照護。
-						</p>
-						<p>一起加入我們，用愛心點亮牠們的未來。</p>
-						<p>您的每一分付出，都能改變牠們的一生。</p>
-					</div>
-					<div
-						class="donation-steps mb-6 flex flex-col gap-[34px] text-fs-3 text-secondary-1"
-					>
-						<div class="relative flex items-center gap-4 step-item">
-							<div
-								class="step-number flex h-[64px] w-[64px] items-center justify-center bg-donation_paw_sm bg-center bg-no-repeat p-4"
-							>
-								1
-							</div>
-							<p class="text-h7">捐款資料及金額</p>
-							<span
-								class="absolute left-[32px] top-full h-[34px] w-[1px] bg-secondary-3"
-							></span>
+			<div
+				id="donate_block"
+				class="content-section hidden pb-[105px] xl:pt-[120px]"
+			>
+				<div class="xl:flex">
+					<div class="xl:w-1/2">
+						<div
+							class="mb-[23px] flex flex-col items-center xl:mb-[14px] xl:items-start"
+						>
+							<h4 class="text-h4 text-primary-1 xl:text-h1">
+								捐款流程
+							</h4>
+							<img
+								src="../assets/images/donation/donation_underline.svg"
+								alt="下底線圖片"
+								class="block h-auto w-[158px] xl:w-[274px]"
+							/>
 						</div>
-						<div class="relative flex items-center gap-3 step-item">
-							<div
-								class="step-number flex h-[64px] w-[64px] items-center justify-center bg-donation_paw_sm bg-center bg-no-repeat p-4"
-							>
-								2
-							</div>
-							<p class="text-h7">確認捐款資料</p>
-							<span
-								class="absolute left-[32px] top-full h-[34px] w-[1px] bg-secondary-3"
-							></span>
+						<div
+							class="flex flex-col gap-3 mb-6 text-fs-6 text-primary-2 xl:mb-10 xl:gap-6 xl:text-fs-4"
+						>
+							<p>簡單幾步，就能為園區的貓狗帶來溫暖與希望。</p>
+							<p>
+								無論金額大小，您的捐款都將成為牠們的食物、醫療與照護。
+							</p>
+							<p>一起加入我們，用愛心點亮牠們的未來。</p>
+							<p>您的每一分付出，都能改變牠們的一生。</p>
 						</div>
-						<div class="relative flex items-center gap-3 step-item">
-							<div
-								class="step-number flex h-[64px] w-[64px] items-center justify-center bg-donation_paw_sm bg-center bg-no-repeat p-4"
-							>
-								3
-							</div>
-							<p class="text-h7">完成捐贈</p>
-						</div>
-					</div>
-					<div class="flex flex-col items-center">
 						<a
 							href="#"
-							class="inline-block px-6 py-4 text-white rounded-2xl bg-secondary-1 text-h7"
+							class="hidden px-6 py-4 text-white rounded-2xl bg-secondary-1 text-h7 xl:inline-block"
 							>立即捐款</a
 						>
 					</div>
+					<div class="xl:w-1/2">
+						<div
+							class="donation-steps mb-6 flex flex-col gap-[34px] text-fs-3 text-secondary-1 xl:mb-0 xl:h-full xl:justify-between xl:text-fs-1"
+						>
+							<div
+								class="relative flex items-center step-item xl:gap-4"
+							>
+								<div
+									class="step-number flex h-[64px] w-[64px] items-center justify-center bg-donation_paw_sm bg-center bg-no-repeat p-4 xl:h-[80px] xl:w-[80px] xl:bg-donation_paw"
+								>
+									1
+								</div>
+								<p class="text-h7 xl:text-h3">捐款資料及金額</p>
+								<span
+									class="absolute left-[32px] top-full h-[34px] w-[1px] bg-secondary-3 xl:left-10 xl:top-[95px] xl:h-[80px]"
+								></span>
+							</div>
+							<div
+								class="relative flex items-center step-item xl:gap-4"
+							>
+								<div
+									class="step-number flex h-[64px] w-[64px] items-center justify-center bg-donation_paw_sm bg-center bg-no-repeat p-4 xl:h-[80px] xl:w-[80px] xl:bg-donation_paw"
+								>
+									2
+								</div>
+								<p class="text-h7 xl:text-h3">確認捐款資料</p>
+								<span
+									class="absolute left-[32px] top-full h-[34px] w-[1px] bg-secondary-3 xl:left-10 xl:top-[95px] xl:h-[80px]"
+								></span>
+							</div>
+							<div
+								class="relative flex items-center step-item xl:gap-4"
+							>
+								<div
+									class="step-number flex h-[64px] w-[64px] items-center justify-center bg-donation_paw_sm bg-center bg-no-repeat p-4 xl:h-[80px] xl:w-[80px] xl:bg-donation_paw"
+								>
+									3
+								</div>
+								<p class="text-h7 xl:text-h3">完成捐贈</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col items-center">
+					<a
+						href="#"
+						class="inline-block px-6 py-4 text-white rounded-2xl bg-secondary-1 text-h7 xl:hidden"
+						>立即捐款</a
+					>
 				</div>
 			</div>
 
