@@ -154,6 +154,9 @@ export default {
 			backgroundImage: {
 				donation_banner:
 					"url('/assets/images/donation/donation_banner.jpg')",
+				donation_paw: "url('/assets/images/donation/donation_paw.svg')",
+				donation_paw_sm:
+					"url('/assets/images/donation/donation_paw_sm.svg')",
 				news_banner: "url('/assets/images/news/news_banner.jpg')",
 				news_banner2: "url('/assets/images/news/news_feed.jpg')",
 				news_banner3: "url('/assets/images/news/news_workshop.jpg')",
