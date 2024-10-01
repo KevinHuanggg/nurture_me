@@ -117,12 +117,76 @@
     </section>
      
     <!--各項消息-->
-    <section class="py-[120px] relative">
-      <%- include('./components/news_wave1'); -%>     
+    <section class="py-[120px] relative overflow-hidden">
+      <%- include('./components/news_wave1'); -%> 
+      <img class="absolute opacity-[15%] top-[-120px] left-[-150px]" src="/assets/svg/bgShape/bgShape1.svg" alt="bgShape1">
       <div class="container flex grid grid-cols-12 gap-6">
         <div class="col-span-9">
-          <div class="">
-            <h2 class="h-[418px] p-[100px] mb-12">這是swiper2</h2>
+          <div class="mb-12">
+            <div class="swiper news-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper mb-[48px]">
+                <!-- Slides -->
+                <div class="swiper-slide !flex !items-center">
+                  <div class="w-[50%] flex flex-col justify-between me-[24px]">
+                    <h2 class="text-h2 text-primary-1 mb-[36px]">流浪貓咪健康檢查活動</h2>
+                    <p class="text-fs-3 text-primary-2">我們正在籌劃一場針對流浪貓咪的免費健康檢查活動。這次活動將於2024年8月20日在我們的動物...</p>
+                  </div>
+                  <div class="w-[50%] rounded-[20px] overflow-hidden" >
+                    <img src="/assets/images/news/news_check-up.jpg" alt="check-up">
+                  </div> 
+                </div>
+                <div class="swiper-slide !flex !items-center">
+                  <div class="w-[50%] flex flex-col justify-between me-[24px]">
+                    <h2 class="text-h2 text-primary-1 mb-[36px]">流浪貓咪健康檢查活動</h2>
+                    <p class="text-fs-3 text-primary-2">我們正在籌劃一場針對流浪貓咪的免費健康檢查活動。這次活動將於2024年8月20日在我們的動物...</p>
+                  </div>
+                  <div class="w-[50%] rounded-[20px] overflow-hidden" >
+                    <img src="/assets/images/news/news_check-up.jpg" alt="check-up">
+                  </div> 
+                </div>
+                <div class="swiper-slide !flex !items-center">
+                  <div class="w-[50%] flex flex-col justify-between me-[24px]">
+                    <h2 class="text-h2 text-primary-1 mb-[36px]">流浪貓咪健康檢查活動</h2>
+                    <p class="text-fs-3 text-primary-2">我們正在籌劃一場針對流浪貓咪的免費健康檢查活動。這次活動將於2024年8月20日在我們的動物...</p>
+                  </div>
+                  <div class="w-[50%] rounded-[20px] overflow-hidden" >
+                    <img src="/assets/images/news/news_check-up.jpg" alt="check-up">
+                  </div> 
+                </div>
+              </div>
+              
+             <div class="flex justify-center items-center">
+              <div class="custom-button-prev after:!content-none border border-primary-3 backdrop-blur-sm rounded-full !size-[32px] border-opacity-50 p-[8px] hidden 2xl:block" >
+                <!-- 新增自訂的箭頭圖示 -->
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.875931 8.42417C0.641616 8.18985 0.641616 7.80995 0.875931 7.57564L7.67593 0.775637C7.91024 0.541323 8.29014 0.541323 8.52446 0.775637C8.75877 1.00995 8.75877 1.38985 8.52446 1.62417L2.74872 7.3999L15.7002 7.3999C16.0316 7.3999 16.3002 7.66853 16.3002 7.9999C16.3002 8.33127 16.0316 8.5999 15.7002 8.5999L2.74872 8.5999L8.52446 14.3756C8.75877 14.61 8.75877 14.9899 8.52446 15.2242C8.29015 15.4585 7.91025 15.4585 7.67593 15.2242L0.875931 8.42417Z" fill="#7782B8"/>
+                  </svg>
+                  
+                  
+              </div>
+                <!-- If we need navigation buttons -->
+                
+                <div class="custom-pagination !flex justify-center !w-[343px]"></div>   <!-- If we need pagination -->
+
+                <div class="custom-button-next after:!content-none border border-primary-3 rounded-full !size-[32px] p-[8px] border-opacity-50  hidden 2xl:block">
+                  <!-- 新增自訂的箭頭圖示 -->
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 7.57559C16.3589 7.8099 16.3589 8.1898 16.1246 8.42412L9.32456 15.2241C9.09024 15.4584 8.71034 15.4584 8.47603 15.2241C8.24171 14.9898 8.24171 14.6099 8.47603 14.3756L14.2518 8.59985L1.30029 8.59985C0.968921 8.59985 0.700292 8.33122 0.700292 7.99985C0.700292 7.66848 0.968921 7.39985 1.30029 7.39985L14.2518 7.39985L8.47603 1.62412C8.24171 1.3898 8.24171 1.0099 8.47603 0.775589C8.71034 0.541275 9.09024 0.541275 9.32456 0.775589L16.1246 7.57559Z" fill="#7782B8"/>
+                    </svg>
+                    
+                    
+                    
+                </div>
+                
+                
+              </div> 
+             
+                
+        
+            
+              
+            </div>
           </div>
           <div class="flex justify-between grid grid-cols-9 gap-6">
             <div class="relative max-w-xs  col-span-3">
@@ -205,7 +269,7 @@
 
         </div>
       </div>
-    
+      <img class="absolute opacity-[15%] bottom-[-130px] right-[-220px] z-[-1] " src="/assets/svg/bgShape/bgShape2.svg" alt="bgShape2">
       <%- include('./components/footerWave'); -%>
     </section>
     <%- include('./layout/footer'); -%>

@@ -19,7 +19,26 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  autoplay: {
+  delay: 4000,
+  }
+});
+
+var swiper = new Swiper(".news-swiper", {
+  modules: [Pagination, Navigation, Autoplay],  // 啟用所需模塊
+  loop: true,  // 讓輪播循環
+  pagination: {
+    el: ".custom-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '" style="width: 8px; height: 8px; background-color: #7782B8;"></span>';
+    }
+  },
+  navigation: {
+    nextEl: ".custom-button-next",
+    prevEl: ".custom-button-prev",
+  },
   //autoplay: {
-  //  delay: 4000,
+  //delay: 4000,
   //}
 });
