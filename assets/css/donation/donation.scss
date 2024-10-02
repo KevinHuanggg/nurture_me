@@ -4,6 +4,13 @@
 	}
 
 	img {
-		@apply border-8 border-secondary-2
+		@apply border-8 border-secondary-2;
+	}
+}
+
+.active,
+li:hover {
+	img {
+		@apply border-8 border-secondary-2;
 	}
 }
