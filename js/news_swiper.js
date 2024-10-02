@@ -12,7 +12,15 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '" style="width: 16px; height: 16px; background-color: #7782B8;"></span>';
+      // 獲取螢幕寬度
+      const screenWidth = window.innerWidth;
+  
+      // 根據螢幕寬度設置不同的大小
+      if (screenWidth > 992) { 
+        return '<span class="' + className + '" style="width: 16px; height: 16px; background-color: #7782B8;"></span>';
+      } else { 
+        return '<span class="' + className + '" style="width: 8px; height: 8px; background-color: #7782B8;"></span>';
+      }
     }
   },
   navigation: {
@@ -23,6 +31,7 @@ var swiper = new Swiper(".mySwiper", {
   delay: 4000,
   }
 });
+
 
 var swiper = new Swiper(".news-swiper", {
   modules: [Pagination, Navigation, Autoplay],  // 啟用所需模塊
@@ -38,7 +47,7 @@ var swiper = new Swiper(".news-swiper", {
     nextEl: ".custom-button-next",
     prevEl: ".custom-button-prev",
   },
-  //autoplay: {
-  //delay: 4000,
-  //}
+  autoplay: {
+  delay: 4000,
+  }
 });
