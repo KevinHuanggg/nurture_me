@@ -28,7 +28,7 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-  delay: 4000,
+  delay: 3500,
   }
 });
 
@@ -48,6 +48,6 @@ var swiper = new Swiper(".news-swiper", {
     prevEl: ".custom-button-prev",
   },
   autoplay: {
-  delay: 4000,
+  delay: 3500,
   }
 });
