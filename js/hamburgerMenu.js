@@ -25,9 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	window.addEventListener("scroll", () => {
 		if (window.scrollY > 0 && window.innerWidth < 1200) {
+			navbar.classList.remove("relative");
 			navbar.classList.add("fixed");
 		} else if (window.scrollY <= 0 && window.innerWidth < 1200) {
 			navbar.classList.remove("fixed");
+			navbar.classList.add("relative");
 		}
 	});
 });
