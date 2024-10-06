@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>adoption</title>
+
+	</head>
+
+	<body>
+		<%- include('./layout/header'); -%>
+
+		<!-- header swiper -->
+		<div class="swiper swiperAdoption relative z-0 mb-10 h-[680]">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img
+						class="slide-image"
+						src="../assets/images/adoption/golden-retriever.jpg"
+						alt="goldenretriever"
+					/>
+				</div>
+				<div class="swiper-slide">
+					<img
+						class="slide-image "
+						src="../assets/images/adoption/golden-retriever.jpg"
+						alt="goldenretriever"
+					/>
+				</div>
+				<div class="swiper-slide">
+					<img
+						class="slide-image"
+						src="../assets/images/adoption/golden-retriever.jpg"
+						alt="goldenretriever"
+					/>
+				</div>
+			</div>
+			<!-- 分頁 -->
+			<div class="md:mb-12 swiper-pagination "></div>
+
+
+			<!-- 導航按鈕 -->
+
+			 <div class="swiper-button-next after:hidden ">
+				<img class="" src="../assets/svg/arrow/arrowNext.svg" alt="arrowNext">
+			  </div>
+			  <div class="swiper-button-prev after:hidden ">
+				<img class=" object-cover object-center	" src="../assets/svg/arrow/arrowPrev.svg" alt="arrowPrev">`
+			  </div>
+
+
+			<img
+				class="absolute bottom-0 z-10 w-full"
+				src="../assets/svg/wave/waveWhite2.svg"
+				alt="wave"
+			/>
+		</div>
+		<!--  -->
+		<section class="container mb-20 hidden md:block">
+			<div
+				class="flex items-center justify-between border-b border-primary-4 pb-5"
+			>
+				<div class="relative text-primary-1">
+					<img
+						class="absolute left-0 top-0 -z-10 -translate-x-16 -translate-y-6"
+						src="../assets/svg/adoption/bg-shadow-yellow.svg"
+						alt="bg-shadow-yellow"
+					/>
+					<h2 class="mb-6 text-h1">皮亞傑</h2>
+					<h4 class="text-h5 ">男生8歲黃金獵犬</h4>
+				</div>
+				<button
+					class="rounded-3xl bg-secondary-1 px-10 py-6 text-fs-2 font-bold text-white"
+					type="button"
+				>
+					立即認養
+				</button>
+			</div>
+		</section>
+
+		<!-- 背景故事 -->
+		<section class="container mb-10 md:mb-20">
+			<div
+				class="flex flex-col items-center text-primary-2 md:flex-row md:items-start"
+			>
+				<h3
+					class="mb-2 text-center text-h5 md:w-3/12 md:text-start md:text-h3"
+				>
+					背景故事
+					<img
+						class="w-[140px] md:w-[174px]"
+						src="../assets/svg/underline/underline.svg"
+						alt="line-decoration"
+					/>
+				</h3>
+				<div
+					class="content-container max-h-[120px] overflow-hidden md:w-9/12 lg:overflow-visible"
+					id="contentContainer"
+				>
+					<div id="content" class="md:text-fs-3">
+						<p class="mb-3 md:mb-6">
+							皮亞傑是一隻年約8歲的黃金獵犬，擁有著一身光亮的金色毛發和一雙溫柔的大眼睛。他的身上散發著一種獨特的親和力，讓人一見鍾情。雖然皮亞傑曾經經歷過流浪的生活，但他對人類的愛與信任從未改變。他總是用最溫暖的目光看著你，彷彿在告訴你，他對未來充滿希望。
+						</p>
+						<p class="mb-3 md:mb-6">
+							皮亞傑是一隻非常活潑且友善的狗狗。他喜歡在公園裡跑步，特別是那些充滿自然氣息的地方。他喜歡和人一起玩耍，尤其是捲起的球或是玩具，他總是能夠找到最快的路徑奔向它們。他非常聰明，能夠迅速學會一些基本的指令，也喜歡參加一些簡單的訓練。
+						</p>
+						<p class="mb-3 md:mb-6">
+							在家裡，皮亞傑是一位優雅的伴侶。他會安靜地躺在你身邊，享受你輕撫的手掌。當你需要安慰時，他總是第一時間出現,靠在你身邊，帶給你溫暖與安寧。他不喜歡獨處，對於家庭成員，他的忠誠和依賴是無與倫比的。
+						</p>
+						<p>
+							皮亞傑尋找一個充滿愛的家庭，一個能夠給予他關懷與陪伴的環境。他喜歡和人互動，因此一個能夠經常陪伴他的人會是他理想的主人。皮亞傑對於家庭成員尤其友好，無論是大人還是小孩，他都能夠與他們建立深厚的感情。他的活力和溫暖會讓你的家庭生活更加充實與愉快。
+						</p>
+					</div>
+				</div>
+				<!-- "查看更多" 按鈕，只在手機版顯示 -->
+				<button
+					id="toggleButton"
+					class="ml-auto mt-2 text-primary-3 md:hidden"
+				>
+					查看更多
+				</button>
+			</div>
+		</section>
+
+
+
+		<!-- 性格特徵 -->
+		 <!-- mobile 想其他寫法 -->
+		<div class="container  overflow-hidden	 md:hidden mb-10">
+			<div class="swiper-container text-primary-2 ">
+				<h3
+					class="mb-2 text-center text-h5  "
+				>
+					性格特徵
+					<img
+						class="w-[140px] mx-auto "
+						src="../assets/svg/underline/underline.svg"
+						alt=""
+					/>
+				</h3>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">	
+							<h4 class="mb-3 text-h7">
+								活動度
+							</h4>
+							<p class="mb-4">
+								皮亞傑充滿活力，喜歡跑步和玩耍。他需要每天運動來保持健康，非常適合喜歡戶外活動的家庭。
+							</p>
+
+							<img
+								class=""
+								src="../assets/svg/adoption/activity.svg"
+								alt="activity"
+							/>
+					
+					</div>
+					<div class="swiper-slide ">	
+							<h4 class="mb-3 text-h7 ">
+								親人度
+							</h4>
+							<p class="mb-4 md:mb-0 ">
+								皮亞傑對人非常友善，喜歡和人互動，是一位充滿愛心的好夥伴。能與每位家庭成員建立深厚的感情。
+							</p>
+						
+							<img
+								class=""
+								src="../assets/svg/adoption/friendly.svg"
+								alt="friendly"
+							/>
+					</div>
+					<div class="swiper-slide">
+							<h4 class="mb-3 text-h7 ">
+								適應力
+							</h4>
+							<p class="mb-4 ">
+								皮亞傑適應能力強，能夠快速適應新的環境和生活方式。他樂於接受改變，並能夠輕鬆融入新的家庭。
+							</p>
+							<img
+								class=""
+								src="../assets/svg/adoption/adaptability.svg"
+								alt="adaptability"
+							/>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+
+
+
+
+<!-- 電腦 -->
+
+		<section class="container mb-20 hidden md:block">
+			<div
+				class="flex flex-col items-center text-primary-2 md:flex-row md:items-start"
+			>
+				<h3
+					class="mb-2 text-center text-h5 md:w-3/12 md:text-start md:text-h3"
+				>
+					性格特徵
+					<img
+						class="w-[140px] md:w-[174px]"
+						src="../assets/svg/underline/underline.svg"
+						alt=""
+					/>
+				</h3>
+				<div class="md:w-9/12">
+
+
+					<div
+						class="mb-16 flex flex-col items-center md:flex-row md:items-start"
+					>
+						<div class="md:w-2/3">
+							<h4 class="mb-3 text-h7 md:mb-5 md:text-h4">
+								活動度
+							</h4>
+							<p class="mb-4 md:mb-0 md:text-fs-3">
+								皮亞傑充滿活力，喜歡跑步和玩耍。他需要每天運動來保持健康，非常適合喜歡戶外活動的家庭。
+							</p>
+						</div>
+
+						<div class="md:w-1/3">
+							<img
+								class=""
+								src="../assets/svg/adoption/activity.svg"
+								alt="activity"
+							/>
+						</div>
+					</div>
+
+					<div
+						class="mb-16 flex flex-col items-center md:flex-row md:items-start"
+					>
+						<div class="md:w-2/3">
+							<h4 class="mb-3 text-h7 md:mb-5 md:text-h4">
+								親人度
+							</h4>
+							<p class="mb-4 md:mb-0 md:text-fs-3">
+								皮亞傑對人非常友善，喜歡和人互動，是一位充滿愛心的好夥伴。能與每位家庭成員建立深厚的感情。
+							</p>
+						</div>
+						<div class="md:w-1/3">
+							<img
+								class=""
+								src="../assets/svg/adoption/friendly.svg"
+								alt="friendly"
+							/>
+						</div>
+					</div>
+
+					<div
+						class="mb-16 flex flex-col items-center md:flex-row md:items-start"
+					>
+						<div class="md:w-2/3">
+							<h4 class="mb-3 text-h7 md:mb-5 md:text-h4">
+								適應力
+							</h4>
+							<p class="mb-4 md:mb-0 md:text-fs-3">
+								皮亞傑適應能力強，能夠快速適應新的環境和生活方式。他樂於接受改變，並能夠輕鬆融入新的家庭。
+							</p>
+						</div>
+						<div class="md:w-1/3">
+							<img
+								class=""
+								src="../assets/svg/adoption/adaptability.svg"
+								alt="adaptability"
+							/>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+
+		<!-- 健康狀況 -->
+		<section class="container mb-10 md:mb-[120px]">
+			<div
+				class="flex flex-col text-primary-2 md:flex-row md:items-start"
+			>
+				<h3
+					class="mx-auto mb-2 text-center text-h5 md:w-3/12 md:text-start md:text-h3"
+				>
+					健康狀況
+					<img
+						class="w-[140px] md:w-[174px]"
+						src="../assets/svg/underline/underline.svg"
+						alt="underline"
+					/>
+				</h3>
+				<div class="md:w-9/12">
+					<div class="text-fs-7 md:text-h5">
+						<div class="mb-3 flex md:mb-5">
+							<img
+								class="mr-2"
+								src="../assets/svg/adoption/footprint-icon.svg"
+								alt="footprint-icon"
+							/>
+							<h5 class="">
+								皮毛：
+								<span class="font-normal"
+									>毛髮光亮，皮膚無紅腫或感染跡象。
+								</span>
+							</h5>
+						</div>
+
+						<div class="mb-3 flex items-center md:mb-5">
+							<img
+								class="mr-2"
+								src="../assets/svg/adoption/footprint-icon.svg"
+								alt="footprint-icon"
+							/>
+							<h5 class="">
+								眼睛：
+								<span class="font-normal"
+									>眼睛清澈，沒有流淚或紅腫的情況。
+								</span>
+							</h5>
+						</div>
+
+						<div class="mb-3 flex items-center md:mb-5">
+							<img
+								class="mr-2"
+								src="../assets/svg/adoption/footprint-icon.svg"
+								alt="footprint-icon"
+							/>
+							<h5 class="">
+								耳朵：
+								<span class="font-normal"
+									>耳朵乾淨無異味或分泌物。
+								</span>
+							</h5>
+						</div>
+
+						<div class="mb-5 flex items-center md:mb-8">
+							<img
+								class="mr-2"
+								src="../assets/svg/adoption/footprint-icon.svg"
+								alt="footprint-icon"
+							/>
+							<h5 class="">
+								活動能力：
+								<span class="font-normal"
+									>步態穩定，關節活動自如無疼痛。
+								</span>
+							</h5>
+						</div>
+					</div>
+					<ul class="flex">
+						<li
+							class="mr-2 flex rounded-[40px] bg-primary-3 px-2 py-1 text-fs-7 text-white md:mr-3 md:px-3 md:py-2 md:text-fs-5"
+						>
+							<img
+								class="mr-2"
+								src="../assets/svg/adoption/checkbox-icon.svg"
+								alt="checkbox-icon"
+							/>
+							疫苗
+						</li>
+						<li
+							class="mr-2 flex rounded-[40px] bg-primary-3 px-2 py-1 text-fs-7 text-white md:mr-3 md:px-3 md:py-2 md:text-fs-5"
+						>
+							<img
+								class="mr-2"
+								src="../assets/svg/adoption/checkbox-icon.svg"
+								alt="checkbox-icon"
+							/>
+							驅蟲
+						</li>
+						<li
+							class="flex rounded-[40px] bg-primary-3 px-2 py-1 text-fs-7 text-white md:px-3 md:py-2 md:text-fs-5"
+						>
+							<img
+								class="mr-2"
+								src="../assets/svg/adoption/checkbox-icon.svg"
+								alt="checkbox-icon"
+							/>結紮
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- 認養 button -->
+		<section class="container mb-10  text-center md:hidden">
+			
+				<button
+					class="rounded-2xl bg-secondary-1 px-6 py-4  text-white text-h7"
+					type="button"
+				>
+					立即認養
+				</button>
+			</div>
+		</section>
+
+		<!-- 更多寶貝 -->
+		<section
+			class="relative  bg-primary-4 bg-opacity-50 py-5 md:pb-20 md:mt-10 text-primary-3"
+		>
+			<img
+				class="absolute top-0  w-full -translate-y-full opacity-50"
+				src="../assets//svg/wave/wavePrimary4.svg"
+				alt="wavePrimary4"
+			/>
+			<img
+				class="absolute bottom-0 left-0 -translate-x-44 translate-y-28 opacity-70 md:block hidden"
+				src="../assets/svg/adoption/bg-shadow1.svg"
+				alt="bg-shadow1"
+			/>
+			<img
+				class="absolute right-0 top-0 -translate-y-44 translate-x-44 opacity-70 md:block hidden"
+				src="../assets/svg/adoption/bg-shadow2.svg"
+				alt="bg-shadow2"
+			/>
+			<div class="container">
+				<div class="mb-4 md:mb-16 flex items-end justify-center gap-x-[30px]">
+					<img class="block md:hidden"
+						src="../assets/svg/adoption/line-decoration-left-mobile.svg"
+						alt="line-decoration-left"
+					/>
+					<img class="hidden md:block"
+						src="../assets/svg/adoption/line-decoration-left.svg"
+						alt="line-decoration-left"
+					/>
+					<h2 class="md:text-h2 text-h6">更多寶貝</h2>
+					<img class="block md:hidden"
+						src="../assets/svg/adoption/line-decoration-right-mobile.svg"
+						alt="line-decoration-left"
+					/>
+					<img class="hidden md:block"
+						src="../assets/svg/adoption/line-decoration-right.svg"
+						alt="line-decoration-right"
+					/>
+				</div>
+				<ul class="flex justify-center gap-x-7">
+					<li class="relative">
+						<img
+							class="size-20 md:size-60 rounded-full border-2 md:border-8 border-primary-3 object-cover"
+							src="../assets/images/adoption/pet1.jpg"
+							alt="pet1"
+						/>
+						<h5
+							class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[40px] bg-primary-2 px-5 py-3 text-h5 text-white md:block hidden"
+						>
+							嘟嘟
+						</h5>
+
+						<p class="md:mt-8 md:text-h7 md:block hidden text-center">男生•10歲•雪納瑞</p>
+					</li>
+					<li class="relative">
+						<img
+							class="size-20 md:size-60 rounded-full border-2 md:border-8 border-primary-3 object-cover"
+							src="../assets/images/adoption/pet2.jpg"
+							alt="pet2"
+						/>
+						<h5
+							class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[40px] bg-primary-2 px-5 py-3 text-h5 text-white md:block hidden"
+						>
+							花生
+						</h5>
+
+						<p class="text-center md:mt-8 md:text-h7 md:block hidden">男生•6歲•混種家貓</p>
+					</li>
+					<li class="relative">
+						<img
+							class="size-20 md:size-60 rounded-full border-2 md:border-8 border-primary-3 object-cover"
+							src="../assets/images/adoption/pet3.jpg"
+							alt="pet3"
+						/>
+						<h5
+							class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[40px] bg-primary-2 px-5 py-3 text-h5 text-white md:block hidden"
+						>
+							妞妞
+						</h5>
+
+						<p class=" md:mt-8 md:text-h7 md:block hidden text-center">女生•3歲•吉娃娃</p>
+					</li>
+				</ul>
+			</div>
+
+			<%- include('./components/footerWave'); -%>
+		</section>
+
+		<%- include('./layout/footer'); -%>
+		<script type="module" src="../main.js"></script>
+	</body>
+</html>
