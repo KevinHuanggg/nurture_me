@@ -12,28 +12,22 @@
 		<%- include('./layout/header'); -%>
 
 		<!-- header swiper -->
-		<div class="swiper swiperAdoption relative z-0 mb-10 h-[680]">
+
+
+		
+		<div class="swiper swiperAdoption relative z-0 mb-10 h-[720px] overflow-hidden">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<img
-						class="slide-image"
-						src="../assets/images/adoption/golden-retriever.jpg"
-						alt="goldenretriever"
-					/>
+				<div class="swiper-slide ">
+					<img class="slide-image object-cover object-center  h-full" src="../assets/images/adoption/golden-retriever.jpg" alt="goldenretriever" />
+
+				</div>
+				<div class="swiper-slide ">
+					<img class="slide-image object-cover object-center  h-full" src="../assets/images/adoption/golden-retriever.jpg" alt="goldenretriever" />
+
 				</div>
 				<div class="swiper-slide">
-					<img
-						class="slide-image "
-						src="../assets/images/adoption/golden-retriever.jpg"
-						alt="goldenretriever"
-					/>
-				</div>
-				<div class="swiper-slide">
-					<img
-						class="slide-image"
-						src="../assets/images/adoption/golden-retriever.jpg"
-						alt="goldenretriever"
-					/>
+					<img class="slide-image object-cover object-center h-full" src="../assets/images/adoption/golden-retriever.jpg" alt="goldenretriever" />
+
 				</div>
 			</div>
 			<!-- 分頁 -->
@@ -56,7 +50,7 @@
 				alt="wave"
 			/>
 		</div>
-		<!--  -->
+		<!-- 認養按鈕 -->
 		<section class="container mb-20 hidden md:block">
 			<div
 				class="flex items-center justify-between border-b border-primary-4 pb-5"
@@ -127,8 +121,8 @@
 
 		<!-- 性格特徵 -->
 		 <!-- mobile 想其他寫法 -->
-		<div class="container  overflow-hidden	 md:hidden mb-10">
-			<div class="swiper-container text-primary-2 ">
+		<div class="container  mb-10">
+			<div class=" swiper-container overflow-x-hidden	 md:hidden pb-8 relative text-primary-2 ">
 				<h3
 					class="mb-2 text-center text-h5  "
 				>
@@ -149,7 +143,7 @@
 							</p>
 
 							<img
-								class=""
+								class="mx-auto"
 								src="../assets/svg/adoption/activity.svg"
 								alt="activity"
 							/>
@@ -164,7 +158,7 @@
 							</p>
 						
 							<img
-								class=""
+								class="mx-auto"
 								src="../assets/svg/adoption/friendly.svg"
 								alt="friendly"
 							/>
@@ -177,14 +171,16 @@
 								皮亞傑適應能力強，能夠快速適應新的環境和生活方式。他樂於接受改變，並能夠輕鬆融入新的家庭。
 							</p>
 							<img
-								class=""
+								class="mx-auto"
 								src="../assets/svg/adoption/adaptability.svg"
 								alt="adaptability"
 							/>
 					</div>
-				</div>
-			
+				</div>	
+						<!-- 分頁 --><div class=" swiper-pagination -bottom-6"></div>
+
 			</div>
+			
 		</div>
 
 
@@ -276,7 +272,8 @@
 		</section>
 
 		<!-- 健康狀況 -->
-		<section class="container mb-10 md:mb-[120px]">
+		<section class="relative  ">
+			<div class="container mb-10 md:mb-[120px]">
 			<div
 				class="flex flex-col text-primary-2 md:flex-row md:items-start"
 			>
@@ -381,6 +378,14 @@
 					</ul>
 				</div>
 			</div>
+
+
+		</div>			<img
+		class="absolute  w-full -bottom-[120px]  hidden md:block opacity-50"
+		src="../assets/svg/wave/wavePrimary4.svg"
+		alt="wavePrimary4"
+	  />
+
 		</section>
 
 		<!-- 認養 button -->
@@ -397,23 +402,23 @@
 
 		<!-- 更多寶貝 -->
 		<section
-			class="relative  bg-primary-4 bg-opacity-50 py-5 md:pb-20 md:mt-10 text-primary-3"
+		class="relative   bg-primary-4 bg-opacity-50 py-5 md:pb-20  text-primary-3 md:overflow-hidden"
 		>
-			<img
-				class="absolute top-0  w-full -translate-y-full opacity-50"
-				src="../assets//svg/wave/wavePrimary4.svg"
-				alt="wavePrimary4"
-			/>
-			<img
-				class="absolute bottom-0 left-0 -translate-x-44 translate-y-28 opacity-70 md:block hidden"
-				src="../assets/svg/adoption/bg-shadow1.svg"
-				alt="bg-shadow1"
-			/>
-			<img
-				class="absolute right-0 top-0 -translate-y-44 translate-x-44 opacity-70 md:block hidden"
-				src="../assets/svg/adoption/bg-shadow2.svg"
-				alt="bg-shadow2"
-			/>
+		<img
+		class="absolute top-0 -translate-y-full w-full   opacity-50 md:hidden "
+		src="../assets/svg/wave/wavePrimary4.svg"
+		alt="wavePrimary4"
+	  />
+		  <img
+			class="absolute bottom-0 left-0 -translate-x-20 translate-y-28 opacity-70 md:block hidden"
+			src="../assets/svg/adoption/bg-shadow1.svg"
+			alt="bg-shadow1"
+		  />
+		  <img
+			class="absolute  right-0 top-0 -translate-y-28 translate-x-20 opacity-70 md:block hidden"
+			src="../assets/svg/adoption/bg-shadow2.svg"
+			alt="bg-shadow2"
+		  />
 			<div class="container">
 				<div class="mb-4 md:mb-16 flex items-end justify-center gap-x-[30px]">
 					<img class="block md:hidden"
