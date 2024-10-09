@@ -8,10 +8,10 @@ const swiper = new Swiper(".swiperAdoption", {
 	centeredSlides: true, // 確保當前 slide 居中
 	spaceBetween: 20, // Slide 之間的間距
 	loop: true, // 循環播放
-	// autoplay: {
-	//     delay: 2500,
-	//   disableOnInteraction: true,
-	// },
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: true,
+	},
 
 	breakpoints: {
 		768: {
@@ -43,8 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		slidesPerView: 1,
 		centeredSlides: true,
 		// autoplay: {
-		// 	// delay: 2500, // 自動播放延遲
-		// 	// disableOnInteraction: false, // 用戶互動後仍可自動播放
+		// 	delay: 2500, // 自動播放延遲
+		// 	disableOnInteraction: false, // 用戶互動後仍可自動播放
 		// },
 		pagination: {
 			el: ".swiper-pagination",
