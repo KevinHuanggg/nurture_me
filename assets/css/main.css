@@ -56,6 +56,25 @@
 	.storySwiper .swiper-pagination-bullet {
 		@apply size-2 bg-primary-3 xl:!mx-2 xl:size-4;
 	}
+
+	/* adoptionSwiper */
+	.swiperAdoption .swiper-pagination-bullet,
+	.swiper-mobile .swiper-pagination-bullet {
+		@apply size-2 bg-primary-3 xl:size-4;
+	}
+
+	.swiperAdoption .swiper-button-next {
+		@apply right-60 hidden size-20 md:block;
+	}
+
+	.swiperAdoption .swiper-button-prev {
+		@apply left-60 hidden size-20 md:block;
+	}
+
+	.swiperAdoption .swiper-button-next::after,
+	.swiperAdoption .swiper-button-prev::after {
+		@apply hidden;
+	}
 }
 
 @layer utilities {
