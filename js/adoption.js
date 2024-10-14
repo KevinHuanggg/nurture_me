@@ -13,9 +13,9 @@ window.onload = function () {
 		centeredSlides: true, // 居中顯示當前slide
 		spaceBetween: 20, // slide之間的間距
 		breakpoints: {
-			1400: {
+			1200: {
 				// 桌面尺寸
-				slidesPerView: 1.5,
+				slidesPerView: "auto",
 				spaceBetween: 20,
 			},
 		},
