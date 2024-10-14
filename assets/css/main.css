@@ -64,11 +64,11 @@
 	}
 
 	.swiperAdoption .swiper-button-next {
-		@apply right-60 hidden size-20 md:block;
+		@apply hidden size-20 lg:block xl:right-[15%];
 	}
 
 	.swiperAdoption .swiper-button-prev {
-		@apply left-60 hidden size-20 md:block;
+		@apply hidden size-20 lg:block xl:left-[15%];
 	}
 
 	.swiperAdoption .swiper-button-next::after,
